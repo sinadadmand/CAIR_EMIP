@@ -45,7 +45,7 @@ R codes: [EMIP analyses](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/ma
 ## The CAIR algorithm
 CAIRs of each given protein is calculated using the following function of the shanon entropy:  
 
-<img src="img/CAIR_Eq.JPG" height="260"> 
+<img src="img/CAIR_Eq.JPG" height="200"> 
 
 ## CAIR comparison analyses
 Violin plots of each evolutionary node and their corresponding mean comparison tests of the brunner-munzel:  
