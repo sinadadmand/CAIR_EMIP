@@ -49,7 +49,7 @@ CAIRs of each given protein is calculated using the following function of the sh
 
 ## CAIR comparison analyses
 Violin plots of each evolutionary node and their corresponding mean comparison tests of the brunner-munzel:  
-<img src="Figures/Figure1.jpg" height="1600"> 
+<img src="Figures/Figure1.jpg" height="1400"> 
 
 ## The EMIP algorithm
 Estimation of mutual information for a protein (EMIP) is calculated using the following function:  
