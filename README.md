@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-<img src="img/Proteolab logo.jpg" width=970/>
+<img src="Logo/Proteolab logo.jpg" width=970/>
 
 
 
