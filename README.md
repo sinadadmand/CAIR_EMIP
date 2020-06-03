@@ -171,7 +171,9 @@ cd ShannoProt/ToyData/runCAIR
 3. Run the code file:
 ```sh
 python runCAIR.py
+```
 or
+```sh
 python3 runCAIR.py
 ```
 #### Linux
@@ -210,7 +212,9 @@ cd ShannoProt/ToyData/runEMIP
 3. Run the code file:
 ```sh
 python Human_disease_category_indicators.py
+```
 or
+```sh
 python3 Human_disease_category_indicators.py
 ```
 #### Linux
@@ -238,6 +242,6 @@ Not published yet
 
 License
 -------
-© Copyright 2020 Synaptic Proteolab. Licensed under the MIT License. See [LICENSE](LICENSE) file for more details.
+© Copyright 2020 Synaptic ProteoLab. Licensed under the MIT License. See [LICENSE](LICENSE) file for more details.
 
 <img src="Logo/Synaptic logo.png" width=1100/>
