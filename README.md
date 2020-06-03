@@ -16,10 +16,10 @@
 
 # An extension of Shannon’s entropy agrees with the tree of life and justifies human disease occurrences #
 
-## Description
+# Description
 This Project involves the python and R implementation of the above entitled project.
 
-## Table of Contents
+# Table of Contents
 * [Links to literature](#Links-to-literature)
 * [The CAIR algorithm](#CAIR-algorithm)  
 * [CAIR comparison analyses](#CAIR-comparison-analyses)  
@@ -32,7 +32,7 @@ This Project involves the python and R implementation of the above entitled proj
 * [Toy data](#Toy-data)  
 
 
-## Links to literature 
+# Links to literature 
 
 * **runCAIR** (Calculating the CAIR of all proteomes)  
 _Prepared manuscript._  
@@ -47,44 +47,44 @@ Python codes: [runEMIP](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/mas
 _Prepared manuscript_  
 R codes: [EMIP analyses](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/R_codes/EMIP_analyses).
 
-## The CAIR algorithm
+# The CAIR algorithm
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/blob/master/ShannoProt/runCAIR/runCAIR.ipynb)
 
 CAIRs of each given protein is calculated using the following function of the shanon entropy:  
 
 <img src="img/CAIR_Eq.JPG" height="150"> 
 
-## CAIR comparison analyses
+# CAIR comparison analyses
 Violin plots of each evolutionary node and their corresponding mean comparison tests of the brunner-munzel:  
 <img src="Figures/Figure1.jpg" height="1400"> 
 
-## The EMIP algorithm
+# The EMIP algorithm
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/blob/master/ShannoProt/runEMIP/Human_disease_category_indicators.ipynb)
 
 Estimation of mutual information for a protein (EMIP) is calculated using the following function:  
 <img src="img/EMIP_Eq.JPG" height="250"> 
 
-## EMIP comparison analyses
+# EMIP comparison analyses
 xxxxxxxxxxxxx:  
 <img src="Figures/Figure3.jpg" height="650"> 
 
 
-## Usage
+# Usage
 
-### Install requirements
+## Install requirements
 ```bash
-pip install requests biopython numpy pandas import_ipynb
+pip3 install requests biopython numpy pandas import_ipynb
 ```
 
-#### Run from terminal
+## Run from terminal
 CAIR_EMIP can be executed directly from terminal:
 
 
-#### Run from python
+## Run from python
 Fire up your python shell or ipython notebook. 
 
 
-## Toy data
+# Toy data
 
 The example data files to run all the functions are available here. Of note, these are just small subsets of species and human dataset. We provided these ToyData so that the user can test the method.
 
@@ -92,7 +92,7 @@ As an example you can re-calculate the Proteome CAIRs for the 16 mentioned organ
 
 However, if you plan to run the complete algorithm, you should download all the required files (~100GB for CAIR+ ~100MB for EMIP).
 
-1. CAIR Project
+## 1. CAIR Project
 ### Prerequisites
 
 All required packages to run the scripts can be installed from terminal/CMD using:
@@ -142,7 +142,7 @@ python runCAIR.py
 or
 python3 runCAIR.py
 ```
-2. EMIP Project
+## 2. EMIP Project
 ### Prerequisites
 
 All required packages to run the scripts can be installed from terminal/CMD using:
