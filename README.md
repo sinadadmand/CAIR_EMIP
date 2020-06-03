@@ -67,6 +67,60 @@ xxxxxxxxxxxxx:
 
 
 ## Usage
+#### Run from terminal
+PyPuma can be run directly from the terminal with the following options:
+```
+-h help
+-e, --expression: expression values
+-m, --motif: pair file of motif edges, or Pearson correlation matrix when not provided 
+-p, --ppi: pair file of PPI edges
+-o, --output: output file
+-i, --mir: mir data miR file
+-r, --rm_missing
+-q, --lioness: output for Lioness single sample networks 
+```
+To run PyPuma on the included Toy example:
+```
+python run_puma.py -e ./ToyData/ToyExpressionData.txt -m ./ToyData/ToyMotifData.txt -p ./ToyData/ToyPPIData.txt -i ToyData/ToyMiRList.txt -o output_puma.txt
+```
+To run LIONESS on PUMA networks, use the flag -q (note that this can take a long time and use considerable computing resources):
+
+```python
+python run_puma.py -e ./ToyData/ToyExpressionData.txt -m ./ToyData/ToyMotifData.txt -p ./ToyData/ToyPPIData.txt -i ToyData/ToyMiRList.txt -o output_puma.txt -q output_lioness.txt
+```
+Finally, note that running PUMA without importing motif and expression data will estimate a co-expression network using Pearson correlation.
+
+#### Run from python
+Fire up your python shell or ipython notebook. 
+Import the classes in the PyPuma library:
+```python
+from pypuma.puma import Puma
+from pypuma.lioness import Lioness
+```
+Then run PUMA:
+```python
+puma_obj = Puma('ToyData/ToyExpressionData.txt', 'ToyData/ToyMotifData.txt', 'ToyData/ToyPPIData.txt','ToyData/ToyMiRList.txt')
+```
+Save the results:
+```python
+puma_obj.save_puma_results('Toy_Puma.pairs.txt')
+```
+Example of returning a network visualization of the top edges:
+
+```python
+puma_obj.top_network_plot(top=70, file='top_genes.png')
+```
+<!--
+or
+```python
+from PyPuma.analyze_puma import AnalyzePuma
+plot = AnalyzePuma(puma_obj)
+plot.top_network_plot(top=100, file='top_100_genes.png')
+```-->
+Calculate indegrees for further analysis:
+```python
+indegree = puma_obj.return_puma_indegree()
+```
 
 
 ## Toy data
