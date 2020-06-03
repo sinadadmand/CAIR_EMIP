@@ -1,28 +1,29 @@
-## 0. Loading packages ##
+## 0. Installing necessary packages ##
 #############################################################################################
 if(!require('data.table')){install.packages('data.table')}
 if(!require('svglite')){install.packages('svglite')}
 if(!require('igraph')){install.packages('igraph')}
 if(!require('tidyverse')){install.packages('tidyverse')}
 if(!require('Cairo')){install.packages('Cairo')}
+
+## 0.1. Loading packages
+########################
 library(data.table)
 library(svglite)
 library(igraph)
 library(tidyverse)
 library(Cairo)
 
-
 ###########################
 ## 1. Preparing the data ##
 #############################################################################################
-directory <- getwd()
-df <- fread(paste(directory, "Supplementary/runEMIP/w%Entries_w%diseases_w%uniprot_wo%orpha.csv", sep = "/"),
+df <- fread("https://raw.githubusercontent.com/synaptic-proteolab/CAIR_EMIP/master/Supplementary_materials/EMIP_supplementary_files/w%25entries_w%25diseases_w%25uniprot_wo%25orpha.csv",
             select = c(2, 8))
 colnames(df) <- c("ent", "mip")
 sizes <- df[, c("ent", "mip")]
 
 # loading the uniprot PPI networks file
-links <- fread(paste(directory, "Supplementary/runEMIP/uniprotnetwork_wo_animals.csv", sep = "/"))
+links <- fread("https://raw.githubusercontent.com/synaptic-proteolab/CAIR_EMIP/master/R_codes/EMIP_analyses/Network%20visualization/UniProt_PPI_List__without_nonhuman_entries.csv")
 colnames(links) <- c("intA", "intB")
 links <- links[links$intA != links$intB, ]
 links <- unique(links)
@@ -30,6 +31,8 @@ links <- unique(links)
 ############################################
 ## 2. Customizing the igraph vertex shape ##
 #############################################################################################
+# DISCLAIMER: Customization of vertex shape is adopted from the main developer
+# of iGraph R libarary, Mr. Gábor Csárdi. See: https://github.com/gaborcsardi
 mycircle <- function(coords, v=NULL, params) {
   vertex.color <- params("vertex", "color")
   if (length(vertex.color) != 1 && !is.null(v)) {
@@ -111,19 +114,19 @@ dev.off()
 #############################
 ## 4. Getting output files ##
 #############################################################################################
-protnet('a)', 'Q8WZ42', 'Connectin', 'network_01.svg', 1)
-protnet('b)', 'P05067', 'Amyloid-beta\nprecursor protein', 'network_02.svg', 2)
-protnet('c)', 'P0CG48', 'Polyubiquitin-C', 'network_03.svg', 1)
-#protnet('d)', 'Q8WXI7', 'Ovarian carcinoma\nantigen CA125', 'network_04.svg', 2)
-protnet('e)', 'Q9NRI5', 'Disrupted in schizo-\nphrenia 1 protein', 'network_05.svg', 2)
-protnet('f)', 'P04637', 'Cellular tumor\nantigen p53', 'network_06.svg', 2)
-protnet('g)', 'Q09472', 'Histone acetyl-\ntransferase p300', 'network_07.svg', 2)
-protnet('h)', 'P00533', 'Epidermal growth\nfactor receptor', 'network_08.svg', 2)
-protnet('i)', 'P62993', 'Growth factor receptor-\nbound protein 2', 'network_09.svg', 2)
-protnet('j)', 'Q8NF91', 'Nesprin-1', 'network_10.svg', 1)
-protnet('k)', 'P63104', 'Protein kinase C\ninhibitor protein 1', 'network_11.svg', 2)
-protnet('l)', 'P78362', 'SRSF protein kinase 2', 'network_12.svg', 2)
-protnet('m)', 'Q03001', 'Dystonin', 'network_13.svg', 1)
-protnet('n)', 'Q5VST9', 'Obscurin', 'network_14.svg', 1)
-protnet('o)', 'P38398', 'Breast cancer type 1\nsusceptibility protein', 'network_15.svg', 2)
-protnet('p)', 'Q15149', 'Plectin', 'network_16.svg', 1)
+protnet('a)', 'Q8WZ42', 'Connectin', 'Supp_Fig2_a.svg', 1)
+protnet('b)', 'P05067', 'Amyloid-beta\nprecursor protein', 'Supp_Fig2_b.svg', 2)
+protnet('c)', 'P0CG48', 'Polyubiquitin-C', 'Supp_Fig2_c.svg', 1)
+protnet('d)', 'Q8WXI7', 'Ovarian carcinoma\nantigen CA125', 'Supp_Fig2_d.svg', 2) # the drawn network is from the PICKLE database
+protnet('e)', 'Q9NRI5', 'Disrupted in schizo-\nphrenia 1 protein', 'Supp_Fig2_e.svg', 2)
+protnet('f)', 'P04637', 'Cellular tumor\nantigen p53', 'Supp_Fig2_f.svg', 2)
+protnet('g)', 'Q09472', 'Histone acetyl-\ntransferase p300', 'Supp_Fig2_g.svg', 2)
+protnet('h)', 'P00533', 'Epidermal growth\nfactor receptor', 'Supp_Fig2_h.svg', 2)
+protnet('i)', 'P62993', 'Growth factor receptor-\nbound protein 2', 'Supp_Fig2_i.svg', 2)
+protnet('j)', 'Q8NF91', 'Nesprin-1', 'Supp_Fig2_j.svg', 1)
+protnet('k)', 'P63104', 'Protein kinase C\ninhibitor protein 1', 'Supp_Fig2_k.svg', 2)
+protnet('l)', 'P78362', 'SRSF protein kinase 2', 'Supp_Fig2_l.svg', 2)
+protnet('m)', 'Q03001', 'Dystonin', 'Supp_Fig2_m.svg', 1)
+protnet('n)', 'Q5VST9', 'Obscurin', 'Supp_Fig2_n.svg', 1)
+protnet('o)', 'P38398', 'Breast cancer type 1\nsusceptibility protein', 'Supp_Fig2_o.svg', 2)
+protnet('p)', 'Q15149', 'Plectin', 'Supp_Fig2_p.svg', 1)
