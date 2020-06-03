@@ -2,6 +2,8 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-red.svg?style=flat)](https://github.com/synaptic-proteolab/CAIR_EMIP/pulls)
 [![GitHub issues](https://img.shields.io/github/issues/synaptic-proteolab/CAIR_EMIP.svg)](https://github.com/synaptic-proteolab/CAIR_EMIP/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<img src="https://img.shields.io/badge/Study%20Status-Results%20Available-yellow.svg" alt="Study Status: Results Available"> 
+
 
 
 <img src="Logo/Proteolab logo.jpg" width=1100/>
@@ -43,6 +45,8 @@ _Prepared manuscript_
 R codes: [EMIP analyses](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/R_codes/EMIP_analyses).
 
 ## The CAIR algorithm
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/blob/master/ShannoProt/runCAIR/runCAIR.ipynb)
+
 CAIRs of each given protein is calculated using the following function of the shanon entropy:  
 
 <img src="img/CAIR_Eq.JPG" height="150"> 
@@ -53,11 +57,11 @@ Violin plots of each evolutionary node and their corresponding mean comparison t
 
 ## The EMIP algorithm
 Estimation of mutual information for a protein (EMIP) is calculated using the following function:  
-<img src="img/EMIP_Eq.JPG" height="150"> 
+<img src="img/EMIP_Eq.JPG" height="250"> 
 
 ## EMIP comparison analyses
 xxxxxxxxxxxxx:  
-<img src="Figures/xxxxxxxxx.jpg" height="300"> 
+<img src="Figures/Figure3.jpg" height="500"> 
 
 
 ## Usage
