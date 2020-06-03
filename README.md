@@ -28,9 +28,6 @@ This Project involves the python and R implementation of the above-entitled proj
 * [The EMIP algorithm](#EMIP-algorithm)  
 * [EMIP comparison analyses](#EMIP-comparison-analyses)  
 * [Usage](#Usage)  
-  * [Prerequisites](#Install-requirements)  
-  * [CAIR Project](#1.-CAIR-Project)  
-  * [Run from python](#run-from-python)  
 * [Toy data](#Toy-data)  
 
 
