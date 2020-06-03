@@ -2,7 +2,7 @@ An extension of Shannon’s entropy agrees with the tree of life and justifies h
 =====================================
 
 <p align="center">
-  <img src="Logo/Proteolab logo.png" width=650>
+  <img src="Logo/Proteolab logo.jpg" width=650>
 </p>
 
 [Website](https://www.synaptic.one/) |
@@ -50,7 +50,11 @@ R codes: [DiseaseAnals](R_codes/EMIP_analyses).
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/tree/master/ShannoProt/runCAIR/runCAIR.ipynb)
 
 In the context of proteomics, the CAIR is proposed as the 22-ary of [Shannon’s entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)). For each given protein, CAIR is formulized as:  
-<img src="img/CAIR_Eq.JPG" height="120">   
+
+<p align="center">
+<img src="img/CAIR_Eq.JPG" height="120">  
+</p>
+
 in which r is a numeral given to each residue, t is the total number of residues, p_r is the relative frequency of rth residue in the protein.
 
 # CAIR comparisons through the tree of life
@@ -63,7 +67,11 @@ in which r is a numeral given to each residue, t is the total number of residues
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/tree/master/ShannoProt/runEMIP/Human_disease_category_indicators.ipynb)
 
 As proposed by the mathematical theorem, the estimation of mutual information is formulized as:  
-<img src="img/EMIP_Eq.JPG" height="180">   
+
+<p align="center">
+  <img src="img/EMIP_Eq.JPG" height="220"> 
+</p>
+
 <p align="justify">in which μ_Φ is the mutual information for the Φ protein, n is the number of interactions, l_φ is the length of the φth interactor, l_Φ is the length of protein Φ, r is a numeral given to each residue in proteins, t is the total number of residues, p_((r,φ)) is the relative frequency of rth residue in φth interactor, and p_((r,Φ)) is the relative frequency of rth residue in Φ protein.</p>
 
 # Analysis of human disease indicators
