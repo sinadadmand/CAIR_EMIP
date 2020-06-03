@@ -55,14 +55,20 @@ CAIRs of each given protein is calculated using the following function of the sh
 <img src="img/CAIR_Eq.JPG" height="150"> 
 
 ## CAIR comparison analyses
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/blob/master/ShannoProt/runCAIR/runCAIR.ipynb)
+
 Violin plots of each evolutionary node and their corresponding mean comparison tests of the brunner-munzel:  
 <img src="Figures/Figure1.jpg" height="1400"> 
 
 ## The EMIP algorithm
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/blob/master/ShannoProt/runEMIP/Human_disease_category_indicators.ipynb)
+
 Estimation of mutual information for a protein (EMIP) is calculated using the following function:  
 <img src="img/EMIP_Eq.JPG" height="250"> 
 
 ## EMIP comparison analyses
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/blob/master/R_codes/)
+
 xxxxxxxxxxxxx:  
 <img src="Figures/Figure3.jpg" height="650"> 
 
