@@ -165,15 +165,12 @@ pip3 install requests biopython numpy pandas import_ipynb
 ```
 git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 ```
-2. reset the currnet directory to user directory
+2. Change running directory to the project environment
 ```
 cd %HOMEDRIVE%%HOMEPATH%
-```
-3. Change running directory to the project environment
-```
 cd ShannoProt/ToyData/runCAIR
 ```
-4. Run the code file
+3. Run the code file
 ```py
 python runCAIR.py
 or
@@ -184,16 +181,12 @@ python3 runCAIR.py
 ```sh
 git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 ``` 
-
-2. reset the currnet directory to user directory
+2. Change running directory to the project environment
 ```sh
 cd ~
-```
-3. Change running directory to the project environment
-```sh
 cd ShannoProt/ToyData/runCAIR
 ```
-4. Run the code file
+3. Run the code file
 ```sh
 python runCAIR.py
 or
@@ -209,15 +202,13 @@ python3 runCAIR.py
 ```
 git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 ```
-2. reset the currnet directory to the user directory
+
+2. Change running directory to the project environment
 ```
 cd %HOMEDRIVE%%HOMEPATH%
-```
-3. Change running directory to the project environment
-```
 cd ShannoProt/ToyData/runEMIP
 ```
-4. Run the code file
+3. Run the code file
 ```py
 python Human_disease_category_indicators.py
 or
@@ -229,15 +220,12 @@ python3 Human_disease_category_indicators.py
 git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 ``` 
 
-2. reset the currnet directory to the user directory
+2. Change running directory to the project environment
 ```sh
 cd ~
-```
-3. Change running directory to the project environment
-```sh
 cd ShannoProt/ToyData/runEMIP
 ```
-4. Run the code file
+3. Run the code file
 ```sh
 python Human_disease_category_indicators.py
 or
