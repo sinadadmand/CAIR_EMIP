@@ -14,7 +14,7 @@
 
 
 
-# An extension of Shannon’s entropy agrees with the tree of life and justifies human disease occurrences #
+# "An extension of Shannon’s entropy agrees with the tree of life and justifies human disease occurrences" #
 
 # Description
 This Project involves the python and R implementation of the above entitled project.
@@ -120,7 +120,7 @@ Required files to run runEMIP.py are available at:
   ###### *Downloaded files should be moved to the EMIP project directory
 
 #### Run from Terminal/CMD
-runEMIP can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#ToyData) section below except: 
+runEMIP can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#ToyData) section below except (~~/ToyData~~): 
 ```
 cd ShannoProt/ToyData/runEMIP
 ```
