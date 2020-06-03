@@ -8,7 +8,7 @@ An extension of Shannon’s entropy agrees with the tree of life and justifies h
 [Website](https://www.synaptic.one/) |
 [Reproducibility](#usage) |
 [Tutorial on Toy Data](#toy-data) |
-[Reference article]() |
+[Reference article](#reference-article) |
 [Supplementary materials](Supplementary_materials)
 
 [![HitCount](http://hits.dwyl.com/synaptic-proteolab/CAIR_EMIP.svg)](http://hits.dwyl.com/synaptic-proteolab/CAIR_EMIP)
@@ -121,7 +121,7 @@ Open "runCAIR.ipynb" and run all cells.
 ### Input files
 Required files to run runEMIP.py are available at:
 
-* [UniProtNormalizedTabular-default.txt](https://www.pickle.gr/Data/2.5/PICKLE2_5_UniProtNormalizedTabular-default.zip)
+* [UniProtNormalizedTabular-default.txt](http://www.pickle.gr/Data/2.5/PICKLE2_5_UniProtNormalizedTabular-default.zip)
 * [uniprot-proteome%3AUP000005640.tab](https://www.uniprot.org/uniprot/?query=proteome:UP000005640&format=tab&force=true&columns=id,reviewed,genes(PREFERRED),protein%20names,sequence,database(Orphanet),comment(INVOLVEMENT%20IN%20DISEASE),interactor&compress=yes)
 * [en_product9_prev.csv](http://www.orphadata.org/data/xml/en_product9_prev.xml) (***the file should firstly be converted from .xml to .csv via Microsoft Excel or a similar program***)
 * [main_HUMAN.csv](https://github.com/marcottelab/Gene-Ages/raw/master/Main/main_HUMAN.csv)  
