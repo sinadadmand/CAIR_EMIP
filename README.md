@@ -2,7 +2,7 @@ An extension of Shannon’s entropy agrees with the tree of life and justifies h
 =====================================
 
 <p align="center">
-  <img src="Logo/Proteolab logo.jpg" width=650>
+  <img src="Logo/Proteolab logo.png" width=650>
 </p>
 
 [Website](https://www.synaptic.one/) |
@@ -55,7 +55,9 @@ in which r is a numeral given to each residue, t is the total number of residues
 
 # CAIR comparisons through the tree of life
 <p align="justify">After running the <a href="R_codes/CAIR_comparisons/CAIR%20comparison%20violin%20plots/Violin%20Plots.R">R code</a> for comparison of phyla CAIRs all through the tree of life, the below figure would be obtained. The significance test is the <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167947306001885">Brunner-Munzel test</a> (or known as Generalized Wilcoxon test) as the phyla CAIRs are negatively-skewed, unbalanced and heteroscedastic.</p>
-<img src="Figures/Figure1.jpg" height="1400"> 
+<p align="center">
+  <img src="img/CAIRcomp.png" height="1400"> 
+</p>
 
 # The Mutual Information of Proteins
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/tree/master/ShannoProt/runEMIP/Human_disease_category_indicators.ipynb)
@@ -66,8 +68,9 @@ As proposed by the mathematical theorem, the estimation of mutual information is
 
 # Analysis of human disease indicators
 <p align="justify">After running the <a href="R_codes/EMIP_analyses/Human%20proteome%20analysis/DTK%20test%20%26%20Errorbars.R">R code</a> for comparison of phyla CAIRs all through the tree of life, the below figure would be obtained. The significance test is the Dunnett-Tukey-Kramer pairwise multiple comparison test adjusted for unequal variances and unequal sample sizes.</p>
-<img src="Figures/Figure3.jpg" height="650"> 
-
+<p align="center">
+  <img src="img/DiseaseAnals.png" height="650"> 
+</p>
 
 # Usage
 
