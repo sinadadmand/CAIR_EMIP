@@ -1,8 +1,11 @@
-## 0. Loading packages ##
+## 0. Installing necessary packages ##
 #############################################################################################
 if(!require('data.table')){install.packages('data.table')}
 if(!require('HH')){install.packages('HH')}
 if(!require('svglite')){install.packages('svglite')}
+
+## 0.1. Loading packages
+########################
 library(data.table)
 library(HH)
 library(svglite)
@@ -10,8 +13,7 @@ library(svglite)
 ###########################
 ## 1. Preparing the data ##
 #############################################################################################
-directory <- getwd()
-df <- fread(paste(directory, 'Supplementary/runEMIP/w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv', sep = '/'),
+df <- fread("https://raw.githubusercontent.com/synaptic-proteolab/CAIR_EMIP/master/Supplementary_materials/EMIP_supplementary_files/w%25entries_w%25diseases(accumulated)_w%25uniprot_w%25orpha(processed).csv",
             select = c(1,2,5,6,7,8,10,11,12))
 colnames(df) <- c("stat", "ent", "len", "cair", "int", "mip", "occ", "dis", "age")
 df <- df[df$stat=='reviewed',]
@@ -207,7 +209,7 @@ parset <- list(
   sub.text = fonttext,
   add.text = fonttext)
 
-svglite(file = 'LEMIP.svg', width = 3.4, height = 2.5)
+svglite(file = 'Fig4_a.svg', width = 3.4, height = 2.5)
 xt <- t(as.data.frame.array(xtabs(~ occ + mip, data = df)))
 plot.likert(x = xt, ylab = 'LEMIP', xlab = "Percents", as.percent = T,
             ReferenceZero = 2.5, scales=list(x=list(at=seq(-100,100,10))),
@@ -215,7 +217,7 @@ plot.likert(x = xt, ylab = 'LEMIP', xlab = "Percents", as.percent = T,
             main = F, rightAxis = F, col = npg, par.settings = parset)
 dev.off()
 
-svglite(file = 'Num of Int.svg', width = 3.4, height = 2.5)
+svglite(file = 'Fig4_b.svg', width = 3.4, height = 2.5)
 xt <- t(as.data.frame.array(xtabs(~ occ + int, data = df)))
 plot.likert(x = xt, ylab = 'Number of interactions', xlab = "Percents", as.percent = T,
             ReferenceZero = 2.5, scales=list(x=list(at=seq(-100,100,10))),
@@ -223,7 +225,7 @@ plot.likert(x = xt, ylab = 'Number of interactions', xlab = "Percents", as.perce
             main = F, rightAxis = F, col = npg, par.settings = parset)
 dev.off()
 
-svglite(file = 'CAIR.svg', width = 3.4, height = 2.5)
+svglite(file = 'Fig4_d.svg', width = 3.4, height = 2.5)
 xt <- t(as.data.frame.array(xtabs(~ occ + cair, data = df)))
 plot.likert(x = xt, ylab = 'CAIR', xlab = "Percents", as.percent = T,
             ReferenceZero = 2.5, scales=list(x=list(at=seq(-100,100,10))),
@@ -231,7 +233,7 @@ plot.likert(x = xt, ylab = 'CAIR', xlab = "Percents", as.percent = T,
             main = F, rightAxis = F, col = npg, par.settings = parset)
 dev.off()
 
-svglite(file = 'Prot Len.svg', width = 3.4, height = 2.5)
+svglite(file = 'Fig4_e.svg', width = 3.4, height = 2.5)
 xt <- t(as.data.frame.array(xtabs(~ occ + len, data = df)))
 plot.likert(x = xt, ylab = 'Protein length', xlab = "Percents", as.percent = T,
             ReferenceZero = 2.5, scales=list(x=list(at=seq(-100,100,10))),
@@ -239,7 +241,7 @@ plot.likert(x = xt, ylab = 'Protein length', xlab = "Percents", as.percent = T,
             main = F, rightAxis = F, col = npg, par.settings = parset)
 dev.off()
 
-svglite(file = 'Gene Age.svg', width = 3.4, height = 2.5)
+svglite(file = 'Fig4_c.svg', width = 3.4, height = 2.5)
 df <- df[!is.na(df$age),]
 xt <- t(as.data.frame.array(xtabs(~ occ + age, data = df)))
 plot.likert(x = xt, ylab = 'Gene age', xlab = "Percents", as.percent = T,
