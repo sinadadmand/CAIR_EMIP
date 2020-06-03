@@ -102,7 +102,7 @@ Fire up your ipython notebook.
 Open "runCAIR.ipynb" and run all cells.
 
 ### Final output files>
-* 1. [Complete proteome CAIRs.csv](https://github.com/synaptic-proteolab/CAIR_EMIP/blob/master/Supplementary_materials/CAIR_supplementary_files/Complete_proteome_CAIRs.csv)
+* 1. [Complete proteome CAIRs.csv](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/Supplementary_materials/CAIR_supplementary_files/Complete_proteome_CAIRs.csv)
 * 2. [All species residues.csv (*not uploaded due to its large size)]()
 * 3. [Entries sprot.csv (*not uploaded due to its large size)]()
 * 4. [Entries trembl (*not uploaded due to its large size)]()
@@ -132,10 +132,10 @@ Fire up your ipython notebook.
 Open "Human_disease_category_indicators.ipynb" and run all cells.
 
 ### Final output files>
-* 1. [w%entries(dropped)_w%diseases(expanded)_w%uniprot_w%orpha(processed).csv](https://github.com/synaptic-proteolab/CAIR_EMIP/blob/master/Supplementary_materials/EMIP_supplementary_files/w%entries(dropped)_w%diseases(expanded)_w%uniprot_w%orpha(processed).csv)
-* 2. [w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv](https://github.com/synaptic-proteolab/CAIR_EMIP/blob/master/Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv)
-* 3. [w%entries_w%diseases(expanded)_w%uniprot_w%orpha(unprocessed).csv](https://github.com/synaptic-proteolab/CAIR_EMIP/blob/master/Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases(expanded)_w%uniprot_w%orpha(unprocessed).xlsx)
-* 4. [w%entries_w%diseases_w%uniprot_wo%orpha.csv](https://github.com/synaptic-proteolab/CAIR_EMIP/blob/master/Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases_w%uniprot_wo%orpha.csv)
+* 1. [w%entries(dropped)_w%diseases(expanded)_w%uniprot_w%orpha(processed).csv](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/Supplementary_materials/EMIP_supplementary_files/w%entries(dropped)_w%diseases(expanded)_w%uniprot_w%orpha(processed).csv)
+* 2. [w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv)
+* 3. [w%entries_w%diseases(expanded)_w%uniprot_w%orpha(unprocessed).csv](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases(expanded)_w%uniprot_w%orpha(unprocessed).xlsx)
+* 4. [w%entries_w%diseases_w%uniprot_wo%orpha.csv](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases_w%uniprot_wo%orpha.csv)
 
 # Toy data
 
