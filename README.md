@@ -53,9 +53,8 @@ In the context of proteomics, the CAIR is proposed as the 22-ary of [Shannon’s
 
 <p align="center">
 <img src="img/CAIR_Eq.JPG" height="120">  
-</p>
-
-in which r is a numeral given to each residue, t is the total number of residues, p_r is the relative frequency of rth residue in the protein.
+</p>  
+<p align="justify">in which r is a numeral given to each residue, t is the total number of residues, p_r is the relative frequency of rth residue in the protein.</p>
 
 # CAIR comparisons through the tree of life
 <p align="justify">After running the <a href="R_codes/CAIR_comparisons/CAIR%20comparison%20violin%20plots/Violin%20Plots.R">R code</a> for comparison of phyla CAIRs all through the tree of life, the below figure would be obtained. The significance test is the <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167947306001885">Brunner-Munzel test</a> (or known as Generalized Wilcoxon test) as the phyla CAIRs are negatively-skewed, unbalanced and heteroscedastic.</p>
@@ -70,8 +69,7 @@ As proposed by the mathematical theorem, the estimation of mutual information is
 
 <p align="center">
   <img src="img/EMIP_Eq.JPG" height="220"> 
-</p>
-
+</p>  
 <p align="justify">in which μ_Φ is the mutual information for the Φ protein, n is the number of interactions, l_φ is the length of the φth interactor, l_Φ is the length of protein Φ, r is a numeral given to each residue in proteins, t is the total number of residues, p_((r,φ)) is the relative frequency of rth residue in φth interactor, and p_((r,Φ)) is the relative frequency of rth residue in Φ protein.</p>
 
 # Analysis of human disease indicators
