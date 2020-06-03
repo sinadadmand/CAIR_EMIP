@@ -1,22 +1,26 @@
-## 0. Loading packages ##
+## 0. Installing necessary packages ##
 #############################################################################################
 if (!require("plotly")) install.packages("plotly")
 if (!require("brunnermunzel")) install.packages("brunnermunzel")
 if (!require("data.table")) install.packages("data.table")
 if (!require("processx")) install.packages("processx")
+
+## 0.1. Loading packages
+########################
 library (plotly)
 library (brunnermunzel)
 library (data.table)
 library (processx)
+
 ###########################
 ## 1. Preparing the data ##
 #############################################################################################
-directory <- getwd()
-df <- fread(paste(directory, 'Supplementary/runCAIR/Complete proteome CAIRs.csv', sep = '/'),
+df <- fread("https://raw.githubusercontent.com/synaptic-proteolab/CAIR_EMIP/master/Supplementary_materials/CAIR_supplementary_files/Complete_proteome_CAIRs.csv",
             select = c(1,2,3,5))
 colnames(df) <- c("org", "cair", "tax", "code")
 each_plot_width = 70
 assign('num_of_plots', 0)
+
 #######################################################################################
 ## 2. Creating a function to draw violin plots and attach Brunner Munzel test results##
 #############################################################################################
@@ -88,7 +92,7 @@ violinplot <- function(test_num, grp1, grp2){
 # The below codes are based on the tree of life
 #.......................................................
 #library(plyr)
-#count(df, vars = "code")
+#count(df, vars = "code") # to count organisms in each phylum
 fig_rows = 10
 fig <- subplot(
   violinplot('T1', df$code<=56, df$code>=57),
@@ -187,6 +191,7 @@ fig <- subplot(
 ##########################
 ## 4. Displaying output ##
 #############################################################################################
-orca(p = fig, file = "Fig1_Violinplots5.svg", format = 'svg',
+# for more information on orca see: https://github.com/plotly/orca#Installation
+orca(p = fig, file = "Fig1_Violinplots.svg", format = 'svg',
      width = round(num_of_plots/fig_rows, 0)*each_plot_width,
      height = fig_rows*each_plot_width)
