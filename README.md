@@ -78,7 +78,7 @@ pip3 install requests biopython numpy pandas import_ipynb
 ```
 ## 1. CAIR Project
 ### Input files>
-Required files to run runEMIP.py are available at:
+Required files to run runCAIR.py are available at:
 
 * [uniprot_sprot.fasta](https://ftp.expasy.org/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz) 
 
