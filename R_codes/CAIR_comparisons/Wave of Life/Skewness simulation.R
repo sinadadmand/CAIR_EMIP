@@ -24,7 +24,6 @@ start.time <- Sys.time()
 ###########################
 ## 1. Preparing the data ##
 #############################################################################################
-directory <- getwd()
 df <- fread("https://raw.githubusercontent.com/synaptic-proteolab/CAIR_EMIP/master/Supplementary_materials/CAIR_supplementary_files/Complete_proteome_CAIRs.csv")
 colnames(df) <- c("org_id", "cair", "org", "phyl", "code")
 num_org <- plyr::count(df, vars = "code")
