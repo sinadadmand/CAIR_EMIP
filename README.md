@@ -88,7 +88,7 @@ pip3 install requests biopython numpy pandas import_ipynb
 ```
 ## 1. CAIR Project
 ### Input files
-Required files to run runCAIR.py are available at:
+Required files to run `runCAIR.py` are available at:
 
 * [uniprot_sprot.fasta](https://ftp.expasy.org/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz) 
 
@@ -99,7 +99,7 @@ Required files to run runCAIR.py are available at:
   ###### *Downloaded files should be moved to the CAIR project directory
 
 #### Run from Terminal/CMD
-runCAIR can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#toy-data) section, except for the line: 
+`runCAIR` can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#toy-data) section, except for the line: 
 ```sh
 cd ShannoProt/ToyData/runCAIR
 ```
@@ -109,7 +109,7 @@ cd ShannoProt/runCAIR
 ```
 #### Run from Python
 Fire up your IPython notebook.  
-Open "runCAIR.ipynb" and run all cells.
+Open `runCAIR.ipynb` and run all cells.
 
 ### Final output files
 * 1. [Complete proteome CAIRs.csv](Supplementary_materials/CAIR_supplementary_files/Complete_proteome_CAIRs.csv)
@@ -119,7 +119,7 @@ Open "runCAIR.ipynb" and run all cells.
 
 ## 2. EMIP Project
 ### Input files
-Required files to run runEMIP.py are available at:
+Required files to run `runEMIP.py` are available at:
 
 * [UniProtNormalizedTabular-default.txt](http://www.pickle.gr/Data/2.5/PICKLE2_5_UniProtNormalizedTabular-default.zip)
 * [uniprot-proteome%3AUP000005640.tab](https://www.uniprot.org/uniprot/?query=proteome:UP000005640&format=tab&force=true&columns=id,reviewed,genes(PREFERRED),protein%20names,sequence,database(Orphanet),comment(INVOLVEMENT%20IN%20DISEASE),interactor&compress=yes)
@@ -129,7 +129,7 @@ Required files to run runEMIP.py are available at:
   ###### *NOTE: Downloaded files should be moved to the EMIP project directory.
 
 #### Run from Terminal/CMD
-runEMIP can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#toy-data) section, except for the line: 
+`runEMIP` can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#toy-data) section, except for the line: 
 ```sh
 cd ShannoProt/ToyData/runEMIP
 ```
@@ -139,7 +139,7 @@ cd ShannoProt/runEMIP
 ```
 #### Run from Python
 Fire up your IPython notebook.  
-Open "Human_disease_category_indicators.ipynb" and run all cells.
+Open `Human_disease_category_indicators.ipynb` and run all cells.
 
 ### Final output files
 * 1. [w%entries(dropped)_w%diseases(expanded)_w%uniprot_w%orpha(processed).csv](Supplementary_materials/EMIP_supplementary_files/w%25entries(dropped)_w%25diseases(expanded)_w%25uniprot_w%25orpha(processed).csv)
