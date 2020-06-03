@@ -1,11 +1,13 @@
 An extension of Shannon’s entropy agrees with the tree of life and justifies human disease occurrences
 =====================================
 
-<img src="Logo/Proteolab logo.jpg" width=1100/>
+<p align="center">
+  <img src="Logo/Proteolab logo.jpg" width=650>
+</p>
 
 [Website](https://www.synaptic.one/) |
 [Reproducibility](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md#Usage) |
-[Tutorial on Toy data](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md#Toy-data) |
+[Tutorial on Toy Data](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md#Toy-data) |
 [Reference article]() |
 [Supplementary materials](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/Supplementary_materials)
 
@@ -16,7 +18,7 @@ An extension of Shannon’s entropy agrees with the tree of life and justifies h
 <img src="https://img.shields.io/badge/Study%20Status-Results%20Available-informational.svg?style=plastic&logo=github-actions&logoColor=f5f5f5" alt="Study Status: Results Available"> 
 
 # Description
-#### In this study, with the use of the information theory, we have proposed and proved a mathematical theorem by which we argue the reason for the existence of human diseases. To introduce our theoretical frame of reference, first, we present Shannon’s entropy for proteomes as a tool to compare systems complexity and distinguish between the several levels of biological organizations. Nearly 180 million proteins with more than 61 billion amino acids are analyzed to classify ~29 thousand organisms in 92 phyla. We further establish a new approach, namely the wave of life, to differentiate several taxa and corroborate our findings through the latest tree of life. Foremost, Homo sapiens data from UniProt, PICKLE, and Orphanet databases are gathered and analyzed according to our new theorem to show that disease occurrences follow our predictions. Furthermore, we discuss the dynamics of protein network stability and the different possible scenarios for the existence of human diseases. We also account for the reasoning behind our mathematical theorem and its biological inferences. This GitHub repository involves the Python and R implementation of the investigation.
+<p align="justify">In this study, with the use of the information theory, we have proposed and proved a mathematical theorem by which we argue the reason for the existence of human diseases. To introduce our theoretical frame of reference, first, we present Shannon’s entropy for proteomes as a tool to compare systems complexity and distinguish between the several levels of biological organizations. Nearly 180 million proteins with more than 61 billion amino acids are analyzed to classify ~29 thousand organisms in 92 phyla. We further establish a new approach, namely the wave of life, to differentiate several taxa and corroborate our findings through the latest tree of life. Foremost, Homo sapiens data from UniProt, PICKLE, and Orphanet databases are gathered and analyzed according to our new theorem to show that disease occurrences follow our predictions. Furthermore, we discuss the dynamics of protein network stability and the different possible scenarios for the existence of human diseases. We also account for the reasoning behind our mathematical theorem and its biological inferences. This GitHub repository involves the Python and R implementation of the investigation. </p>
 
 
 # Table of contents
@@ -52,7 +54,7 @@ In the context of proteomics, the CAIR is proposed as the 22-ary of [Shannon’s
 in which r is a numeral given to each residue, t is the total number of residues, p_r is the relative frequency of rth residue in the protein.
 
 # CAIR comparisons through the tree of life
-After running the [R code](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/R_codes/CAIR_comparisons/CAIR%20comparison%20violin%20plots/Violin%20Plots.R) for comparison of phyla CAIRs all through the tree of life, the below figure would be obtained. The significance test is the [Brunner-Munzel test](https://www.sciencedirect.com/science/article/abs/pii/S0167947306001885) (or known as Generalized Wilcoxon test) as the phyla CAIRs are negatively-skewed, unbalanced and heteroscedastic.
+<p align="justify">After running the <a href="https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/R_codes/CAIR_comparisons/CAIR%20comparison%20violin%20plots/Violin%20Plots.R">R code</a> for comparison of phyla CAIRs all through the tree of life, the below figure would be obtained. The significance test is the <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167947306001885">Brunner-Munzel test</a> (or known as Generalized Wilcoxon test) as the phyla CAIRs are negatively-skewed, unbalanced and heteroscedastic.</p>
 <img src="Figures/Figure1.jpg" height="1400"> 
 
 # The Mutual Information of Proteins (EMIP)
@@ -60,10 +62,10 @@ After running the [R code](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/
 
 As proposed by the mathematical theorem, the estimation of mutual information is formulized as:  
 <img src="img/EMIP_Eq.JPG" height="180">   
-in which μ_Φ is the mutual information for the Φ protein, n is the number of interactions, l_φ is the length of the φth interactor, l_Φ is the length of protein Φ, r is a numeral given to each residue in proteins, t is the total number of residues, p_((r,φ)) is the relative frequency of rth residue in φth interactor, and p_((r,Φ)) is the relative frequency of rth residue in Φ protein.
+<p align="justify">in which μ_Φ is the mutual information for the Φ protein, n is the number of interactions, l_φ is the length of the φth interactor, l_Φ is the length of protein Φ, r is a numeral given to each residue in proteins, t is the total number of residues, p_((r,φ)) is the relative frequency of rth residue in φth interactor, and p_((r,Φ)) is the relative frequency of rth residue in Φ protein.</p>
 
 # Analysis of human disease indicators
-After running the [R code](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/R_codes/EMIP_analyses/Human%20proteome%20analysis/DTK%20test%20%26%20Errorbars.R) for comparison of phyla CAIRs all through the tree of life, the below figure would be obtained. The significance test is the Dunnett-Tukey-Kramer pairwise multiple comparison test adjusted for unequal variances and unequal sample sizes.
+<p align="justify">After running the <a href="https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/R_codes/EMIP_analyses/Human%20proteome%20analysis/DTK%20test%20%26%20Errorbars.R">R code</a> for comparison of phyla CAIRs all through the tree of life, the below figure would be obtained. The significance test is the Dunnett-Tukey-Kramer pairwise multiple comparison test adjusted for unequal variances and unequal sample sizes.</p>
 <img src="Figures/Figure3.jpg" height="650"> 
 
 
@@ -137,12 +139,12 @@ Open "Human_disease_category_indicators.ipynb" and run all cells.
 * 4. [w%entries_w%diseases_w%uniprot_wo%orpha.csv](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases_w%uniprot_wo%orpha.csv)
 
 # Toy data
+<p align="justify">Toy data contains an exemplary protein data for users to get to use runCAIR and runEMIP Python functions. It is to be noted that the data are small subsets of real proteome data and human diseases datasets. The toy data helps users test and work on codes without the need of dealing with large data.</p>
 
-Toy data contains an exemplary protein data aimed at tutorial and  functions could be used and tested. Of note, these are just small subsets of species and human dataset. We provided these ToyData so that the user can test the method.
+<p align="justify">For instance, CAIRs for 16 organisms mentioned in Supplemetary Table 1 of the article can be eaisly reproduced using toy data. The required files are available in <a href="https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/ShannoProt/ToyData">ToyData folder</a>. In this code, The program will count all the residues in ToyData FASTA files, group them by organism IDs and calculate CAIRs for each complete protome.</p>
 
-As an example you can re-calculate the Proteome CAIRs for the 16 mentioned organisms in table 1 of article. The required sample data files is in the ToyData folder. The program will count all the residues in ToyData FASTA files, group them by organism IDs and calculate CAIRs for each complete protome.
+<p align="justify">Nevertheless, in case users desire to run the complete algorithms, they could download <a href="https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md##-1.-CAIR-Project">all required files</a> (~100GB for CAIR + ~100MB for EMIP).</p>
 
-Nevertheless, if you plan to run the complete algorithm, you should download all the required files (~100GB for CAIR + ~100MB for EMIP).
 
 ## Prerequisites
 
@@ -235,3 +237,5 @@ Not published yet
 License
 -------
 © Copyright 2020 Synaptic Proteolab. Licensed under the MIT License. See [LICENSE](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/LICENSE) file for more details.
+
+<img src="Logo/Synaptic logo.png" width=1100/>
