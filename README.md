@@ -14,7 +14,7 @@ An extension of Shannon’s entropy agrees with the tree of life and justifies h
 [![HitCount](http://hits.dwyl.com/synaptic-proteolab/CAIR_EMIP.svg)](http://hits.dwyl.com/synaptic-proteolab/CAIR_EMIP)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-blueviolet.svg?style=plastic&logo=python&logoColor=f5f5f5)](https://github.com/synaptic-proteolab/CAIR_EMIP/pulls)
 [![GitHub issues](https://img.shields.io/github/issues/synaptic-proteolab/CAIR_EMIP.svg?style=plastic&logo=github)](https://github.com/synaptic-proteolab/CAIR_EMIP/issues)
-[![License: MIT](https://img.shields.io/badge/License-MIT-important.svg?style=plastic&logo=open-source-initiative&logoColor=f5f5f5)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-important.svg?style=plastic&logo=open-source-initiative&logoColor=f5f5f5)](LICENSE)
 <img src="https://img.shields.io/badge/Study%20Status-Results%20Available-informational.svg?style=plastic&logo=github-actions&logoColor=f5f5f5" alt="Study Status: Results Available"> 
 
 # Description
@@ -73,12 +73,12 @@ As proposed by the mathematical theorem, the estimation of mutual information is
 
 ## Prerequisites
 
-All required packages to run the scripts can be installed from Terminal/CMD using`pip3`:
+All required packages to run the scripts can be installed from Terminal/CMD using `pip3`:
 ```sh
 pip3 install requests biopython numpy pandas import_ipynb
 ```
 ## 1. CAIR Project
-### Input files>
+### Input files
 Required files to run runCAIR.py are available at:
 
 * [uniprot_sprot.fasta](https://ftp.expasy.org/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz) 
@@ -102,14 +102,14 @@ cd ShannoProt/runCAIR
 Fire up your IPython notebook.  
 Open "runCAIR.ipynb" and run all cells.
 
-### Final output files>
+### Final output files
 * 1. [Complete proteome CAIRs.csv](Supplementary_materials/CAIR_supplementary_files/Complete_proteome_CAIRs.csv)
 * 2. [All species residues.csv (*not uploaded due to its large size)]()
 * 3. [Entries sprot.csv (*not uploaded due to its large size)]()
 * 4. [Entries trembl (*not uploaded due to its large size)]()
 
 ## 2. EMIP Project
-### Input files>
+### Input files
 Required files to run runEMIP.py are available at:
 
 * [UniProtNormalizedTabular-default.txt](www.pickle.gr/Data/2.5/PICKLE2_5_UniProtNormalizedTabular-default.zip)
@@ -132,7 +132,7 @@ cd ShannoProt/runEMIP
 Fire up your IPython notebook.  
 Open "Human_disease_category_indicators.ipynb" and run all cells.
 
-### Final output files>
+### Final output files
 * 1. [w%entries(dropped)_w%diseases(expanded)_w%uniprot_w%orpha(processed).csv](Supplementary_materials/EMIP_supplementary_files/w%entries(dropped)_w%diseases(expanded)_w%uniprot_w%orpha(processed).csv)
 * 2. [w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv](Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv)
 * 3. [w%entries_w%diseases(expanded)_w%uniprot_w%orpha(unprocessed).csv](Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases(expanded)_w%uniprot_w%orpha(unprocessed).xlsx)
@@ -148,7 +148,7 @@ Open "Human_disease_category_indicators.ipynb" and run all cells.
 
 ## Prerequisites
 
-All required packages to run the following scripts can be installed from terminal/CMD using`pip3`:
+All required packages to run the following scripts can be installed from terminal/CMD using `pip3`:
 ```sh
 pip3 install requests biopython numpy pandas import_ipynb
 ```
@@ -232,7 +232,7 @@ or
 python3 Human_disease_category_indicators.py
 ```
 
-Reference Paper
+Reference article
 -------
 Not published yet
 
