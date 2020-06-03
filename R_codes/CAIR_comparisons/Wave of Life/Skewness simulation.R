@@ -25,7 +25,7 @@ start.time <- Sys.time()
 ## 1. Preparing the data ##
 #############################################################################################
 directory <- getwd()
-df <- fread(paste(directory, 'Supplementary/runcair/Complete proteome CAIRs.csv', sep = '/'))
+df <- fread("https://raw.githubusercontent.com/synaptic-proteolab/CAIR_EMIP/master/Supplementary_materials/CAIR_supplementary_files/Complete_proteome_CAIRs.csv")
 colnames(df) <- c("org_id", "cair", "org", "phyl", "code")
 num_org <- plyr::count(df, vars = "code")
 num_org <- num_org[-c(1), ] # removing the 0 code which are the unclassified excluded phyla
@@ -112,18 +112,18 @@ bw <- 0.0005
 from <- 0.88
 to <- 0.94
 wol_real <- density(as.matrix(rand_samp), from=from, to=to, bw=bw)
-svglite(file = 'New_Fig2_b.svg', pointsize = 6, width = 3.46, height = 1.73)
+svglite(file = 'Fig2_a.svg', pointsize = 6, width = 3.46, height = 1.73)
 plot(wol_real, main = "", col="#E64B35", xlab='', ylab='', yaxt ='n', family="sans")
 title(ylab="CAIR Density", line=0.5, cex.lab=1, family="sans") + rug (num_org$median)
 dev.off()
 
 wol_simul <- density(simulation, from=from, to=to, bw=bw)
-svglite(file = 'New_Fig2_a.svg', pointsize = 6, width = 3.46, height = 1.73)
+svglite(file = 'Fig2_b.svg', pointsize = 6, width = 3.46, height = 1.73)
 plot(wol_simul, main = "", col="#4DBBD5", xlab='', ylab='', yaxt ='n', family="sans")
 title(ylab="CAIR Density", line=0.5, cex.lab=1, family="sans") + rug (num_org$median)
 dev.off()
 
-svglite(file = 'New_Fig2_a&b.svg', pointsize = 6, width = 3.46, height = 1.73)
+svglite(file = 'Fig2_c.svg', pointsize = 6, width = 3.46, height = 1.73)
 bw <- 0.0001
 wol_real <- density(as.matrix(rand_samp), from=from, to=to, bw=bw)
 wol_simul <- density(simulation, from=from, to=to, bw=bw)
