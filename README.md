@@ -14,10 +14,12 @@
 
 
 
-# "An extension of Shannon’s entropy agrees with the tree of life and justifies human disease occurrences" #
+"An extension of Shannon’s entropy agrees with the tree of life and justifies human disease occurrences"
+=====================================
 
 # Description
-This Project involves the python and R implementation of the above entitled project.
+This Project involves the python and R implementation of the above-entitled project.
+
 
 # Table of Contents
 * [Links to literature](#Links-to-literature)
