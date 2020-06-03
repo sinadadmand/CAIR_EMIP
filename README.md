@@ -113,15 +113,15 @@ Open "runCAIR.ipynb" and run all cells.
 
 ### Final output files
 * 1. [Complete proteome CAIRs.csv](Supplementary_materials/CAIR_supplementary_files/Complete_proteome_CAIRs.csv)
-* 2. [All species residues.csv (*not uploaded due to its large size)]()
-* 3. [Entries sprot.csv (*not uploaded due to its large size)]()
-* 4. [Entries trembl (*not uploaded due to its large size)]()
+* 2. All species residues.csv (*not uploaded due to its large size)
+* 3. Entries sprot.csv (*not uploaded due to its large size)
+* 4. Entries trembl (*not uploaded due to its large size)
 
 ## 2. EMIP Project
 ### Input files
 Required files to run runEMIP.py are available at:
 
-* [UniProtNormalizedTabular-default.txt](www.pickle.gr/Data/2.5/PICKLE2_5_UniProtNormalizedTabular-default.zip)
+* [UniProtNormalizedTabular-default.txt](https://www.pickle.gr/Data/2.5/PICKLE2_5_UniProtNormalizedTabular-default.zip)
 * [uniprot-proteome%3AUP000005640.tab](https://www.uniprot.org/uniprot/?query=proteome:UP000005640&format=tab&force=true&columns=id,reviewed,genes(PREFERRED),protein%20names,sequence,database(Orphanet),comment(INVOLVEMENT%20IN%20DISEASE),interactor&compress=yes)
 * [en_product9_prev.csv](http://www.orphadata.org/data/xml/en_product9_prev.xml) (***the file should firstly be converted from .xml to .csv via Microsoft Excel or a similar program***)
 * [main_HUMAN.csv](https://github.com/marcottelab/Gene-Ages/raw/master/Main/main_HUMAN.csv)  
@@ -142,10 +142,10 @@ Fire up your IPython notebook.
 Open "Human_disease_category_indicators.ipynb" and run all cells.
 
 ### Final output files
-* 1. [w%entries(dropped)_w%diseases(expanded)_w%uniprot_w%orpha(processed).csv](Supplementary_materials/EMIP_supplementary_files/w%entries(dropped)_w%diseases(expanded)_w%uniprot_w%orpha(processed).csv)
-* 2. [w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv](Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv)
-* 3. [w%entries_w%diseases(expanded)_w%uniprot_w%orpha(unprocessed).csv](Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases(expanded)_w%uniprot_w%orpha(unprocessed).xlsx)
-* 4. [w%entries_w%diseases_w%uniprot_wo%orpha.csv](Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases_w%uniprot_wo%orpha.csv)
+* 1. [w%entries(dropped)_w%diseases(expanded)_w%uniprot_w%orpha(processed).csv](Supplementary_materials/EMIP_supplementary_files/w%25entries(dropped)_w%25diseases(expanded)_w%25uniprot_w%25orpha(processed).csv)
+* 2. [w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv](Supplementary_materials/EMIP_supplementary_files/w%25entries_w%25diseases(accumulated)_w%25uniprot_w%25orpha(processed).csv)
+* 3. [w%entries_w%diseases(expanded)_w%uniprot_w%orpha(unprocessed).csv](Supplementary_materials/EMIP_supplementary_files/w%25entries_w%25diseases(expanded)_w%25uniprot_w%25orpha(unprocessed).xlsx)
+* 4. [w%entries_w%diseases_w%uniprot_wo%orpha.csv](Supplementary_materials/EMIP_supplementary_files/w%25entries_w%25diseases_w%25uniprot_wo%25orpha.csv)
 
 # Toy data
 <p align="justify">Toy data contains an exemplary protein data for users to get to use runCAIR and runEMIP Python functions. It is to be noted that the data are small subsets of real proteome data and human diseases datasets. The toy data helps users test and work on codes without the need of dealing with large data.</p>
