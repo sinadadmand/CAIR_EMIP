@@ -1,70 +1,69 @@
-[![HitCount](http://hits.dwyl.com/synaptic-proteolab/CAIR_EMIP.svg)](http://hits.dwyl.com/synaptic-proteolab/CAIR_EMIP)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-red.svg?style=flat)](https://github.com/synaptic-proteolab/CAIR_EMIP/pulls)
-[![GitHub issues](https://img.shields.io/github/issues/synaptic-proteolab/CAIR_EMIP.svg)](https://github.com/synaptic-proteolab/CAIR_EMIP/issues)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-<img src="https://img.shields.io/badge/Study%20Status-Results%20Available-yellow.svg" alt="Study Status: Results Available"> 
-
-
+An extension of Shannon’s entropy agrees with the tree of life and justifies human disease occurrences
+=====================================
 
 <img src="Logo/Proteolab logo.jpg" width=1100/>
 
+[Website](https://www.synaptic.one/) |
+[Reproducibility](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md#Usage) |
+[Tutorial on Toy data](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md#Toy-data) |
+[Reference article]() |
+[Supplementary materials](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/Supplementary_materials)
 
-
-[Website](https://www.synaptic.one/)
-
-
-
-"An extension of Shannon’s entropy agrees with the tree of life and justifies human disease occurrences"
-=====================================
+[![HitCount](http://hits.dwyl.com/synaptic-proteolab/CAIR_EMIP.svg)](http://hits.dwyl.com/synaptic-proteolab/CAIR_EMIP)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-blueviolet.svg?style=plastic&logo=python&logoColor=f5f5f5)](https://github.com/synaptic-proteolab/CAIR_EMIP/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/synaptic-proteolab/CAIR_EMIP.svg?style=plastic&logo=github)](https://github.com/synaptic-proteolab/CAIR_EMIP/issues)
+[![License: MIT](https://img.shields.io/badge/License-MIT-important.svg?style=plastic&logo=open-source-initiative&logoColor=f5f5f5)](https://opensource.org/licenses/MIT)
+<img src="https://img.shields.io/badge/Study%20Status-Results%20Available-informational.svg?style=plastic&logo=github-actions&logoColor=f5f5f5" alt="Study Status: Results Available"> 
 
 # Description
-This Project involves the python and R implementation of the above-entitled project.
+#### In this study, with the use of the information theory, we have proposed and proved a mathematical theorem by which we argue the reason for the existence of human diseases. To introduce our theoretical frame of reference, first, we present Shannon’s entropy for proteomes as a tool to compare systems complexity and distinguish between the several levels of biological organizations. Nearly 180 million proteins with more than 61 billion amino acids are analyzed to classify ~29 thousand organisms in 92 phyla. We further establish a new approach, namely the wave of life, to differentiate several taxa and corroborate our findings through the latest tree of life. Foremost, Homo sapiens data from UniProt, PICKLE, and Orphanet databases are gathered and analyzed according to our new theorem to show that disease occurrences follow our predictions. Furthermore, we discuss the dynamics of protein network stability and the different possible scenarios for the existence of human diseases. We also account for the reasoning behind our mathematical theorem and its biological inferences. This GitHub repository involves the Python and R implementation of the investigation.
 
 
-# Table of Contents
-* [Links to literature](#Links-to-literature)
-* [The CAIR algorithm](#CAIR-algorithm)  
-* [CAIR comparison analyses](#CAIR-comparison-analyses)  
-* [The EMIP algorithm](#EMIP-algorithm)  
-* [EMIP comparison analyses](#EMIP-comparison-analyses)  
-* [Usage](#Usage)  
-* [Toy data](#Toy-data)  
+# Table of contents
+* [Quick links to main codes](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md#Quick-links-to-main-codes)
+* [The Calculated Average Information per Residue (CAIR)](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md#CAIR-algorithm)  
+* [CAIR comparisons through the tree of life](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md#CAIR-comparisons-through-the-tree-of-life)  
+* [The Mutual Information of Proteins (EMIP)](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md#The-Mutual-Information-of-Proteins-(EMIP))  
+* [Analysis of human disease indicators](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md#Analysis-of-human-disease-indicators)  
+* [Usage](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md#Usage)  
+* [Toy data](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/README.md#Toy-data)  
 
 
-# Links to literature 
+# Quick links to main codes 
 
-* **runCAIR** (Calculating the CAIR of all proteomes)  
-_Prepared manuscript._  
+* **runCAIR** (Calculating CAIRs for all available proteomes)  
+_Prepared manuscript_  
 Python codes: [runCAIR](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/ShannoProt/runCAIR).  
-* **CAIRcomp** (Proteomes CAIR comparisons through the tree of life)  
-_Prepared manuscript._  
+* **CAIRcomp** (Proteome CAIR comparisons through the tree of life)  
+_Prepared manuscript_  
 R codes: [CAIR Comparisons](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/R_codes/CAIR_comparisons).  
 * **runEMIP** (Human disease category indicators -- EMIP, etc.)  
 _Prepared manuscript_  
 Python codes: [runEMIP](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/ShannoProt/runEMIP).  
-* **EMIPanalys** (Analysis of the relation between disease occurances and calculated(gathered) parameters in human)  
+* **DiseaseAnals** (Investigation on probable associations between disease occurrences and disease indicators in human proteome)  
 _Prepared manuscript_  
-R codes: [EMIP analyses](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/R_codes/EMIP_analyses).
+R codes: [DiseaseAnals](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/R_codes/EMIP_analyses).
 
-# The CAIR algorithm
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/blob/master/ShannoProt/runCAIR/runCAIR.ipynb)
+# The CAIR of each protein
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/tree/master/ShannoProt/runCAIR/runCAIR.ipynb)
 
-CAIRs of each given protein is calculated using the following function of the shanon entropy:  
+In the context of proteomics, the CAIR is proposed as the 22-ary of [Shannon’s entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)). For each given protein, CAIR is formulized as:  
+<img src="img/CAIR_Eq.JPG" height="120">   
+in which r is a numeral given to each residue, t is the total number of residues, p_r is the relative frequency of rth residue in the protein.
 
-<img src="img/CAIR_Eq.JPG" height="150"> 
-
-# CAIR comparison analyses
-Violin plots of each evolutionary node and their corresponding mean comparison tests of the brunner-munzel:  
+# CAIR comparisons through the tree of life
+After running the [R code](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/R_codes/CAIR_comparisons/CAIR%20comparison%20violin%20plots/Violin%20Plots.R) for comparison of phyla CAIRs all through the tree of life, the below figure would be obtained. The significance test is the [Brunner-Munzel test](https://www.sciencedirect.com/science/article/abs/pii/S0167947306001885) (or known as Generalized Wilcoxon test) as the phyla CAIRs are negatively-skewed, unbalanced and heteroscedastic.
 <img src="Figures/Figure1.jpg" height="1400"> 
 
-# The EMIP algorithm
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/blob/master/ShannoProt/runEMIP/Human_disease_category_indicators.ipynb)
+# The Mutual Information of Proteins (EMIP)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/tree/master/ShannoProt/runEMIP/Human_disease_category_indicators.ipynb)
 
-Estimation of mutual information for a protein (EMIP) is calculated using the following function:  
-<img src="img/EMIP_Eq.JPG" height="250"> 
+As proposed by the mathematical theorem, the estimation of mutual information is formulized as:  
+<img src="img/EMIP_Eq.JPG" height="180">   
+in which μ_Φ is the mutual information for the Φ protein, n is the number of interactions, l_φ is the length of the φth interactor, l_Φ is the length of protein Φ, r is a numeral given to each residue in proteins, t is the total number of residues, p_((r,φ)) is the relative frequency of rth residue in φth interactor, and p_((r,Φ)) is the relative frequency of rth residue in Φ protein.
 
-# EMIP comparison analyses
-xxxxxxxxxxxxx:  
+# Analysis of human disease indicators
+After running the [R code](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/R_codes/EMIP_analyses/Human%20proteome%20analysis/DTK%20test%20%26%20Errorbars.R) for comparison of phyla CAIRs all through the tree of life, the below figure would be obtained. The significance test is the Dunnett-Tukey-Kramer pairwise multiple comparison test adjusted for unequal variances and unequal sample sizes.
 <img src="Figures/Figure3.jpg" height="650"> 
 
 
@@ -89,16 +88,16 @@ Required files to run runCAIR.py are available at:
   ###### *Downloaded files should be moved to the CAIR project directory
 
 #### Run from Terminal/CMD
-runCAIR can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#ToyData) section below except: 
+runCAIR can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#ToyData) section, except for the line: 
 ```
 cd ShannoProt/ToyData/runCAIR
 ```
-which should be changed to:
+which should be changed to (~~/ToyData~~):
 ```
 cd ShannoProt/runCAIR
 ```
-#### Run from python
-Fire up your ipython notebook.  
+#### Run from Python
+Fire up your IPython notebook.  
 Open "runCAIR.ipynb" and run all cells.
 
 ### Final output files>
@@ -113,22 +112,22 @@ Required files to run runEMIP.py are available at:
 
 * [UniProtNormalizedTabular-default.txt](www.pickle.gr/Data/2.5/PICKLE2_5_UniProtNormalizedTabular-default.zip)
 * [uniprot-proteome%3AUP000005640.tab](https://www.uniprot.org/uniprot/?query=proteome:UP000005640&format=tab&force=true&columns=id,reviewed,genes(PREFERRED),protein%20names,sequence,database(Orphanet),comment(INVOLVEMENT%20IN%20DISEASE),interactor&compress=yes)
-* [en_product9_prev.csv](http://www.orphadata.org/data/xml/en_product9_prev.xml) (***this file should be converted from .xml to .csv via excel***)
+* [en_product9_prev.csv](http://www.orphadata.org/data/xml/en_product9_prev.xml) (***the file should firstly be converted from .xml to .csv via Microsoft Excel or a similar program***)
 * [main_HUMAN.csv](https://github.com/marcottelab/Gene-Ages/raw/master/Main/main_HUMAN.csv)  
 
-  ###### *Downloaded files should be moved to the EMIP project directory
+  ###### *NOTE: Downloaded files should be moved to the EMIP project directory.
 
 #### Run from Terminal/CMD
-runEMIP can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#ToyData) section below except (~~/ToyData~~): 
+runEMIP can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#ToyData) section, except for the line: 
 ```
 cd ShannoProt/ToyData/runEMIP
 ```
-which should be changed to:
+which should be changed to (~~/ToyData~~):
 ```
 cd ShannoProt/runEMIP
 ```
-#### Run from python
-Fire up your ipython notebook.  
+#### Run from Python
+Fire up your IPython notebook.  
 Open "Human_disease_category_indicators.ipynb" and run all cells.
 
 ### Final output files>
@@ -139,11 +138,11 @@ Open "Human_disease_category_indicators.ipynb" and run all cells.
 
 # Toy data
 
-The example data files to run all the functions are available here. Of note, these are just small subsets of species and human dataset. We provided these ToyData so that the user can test the method.
+Toy data contains an exemplary protein data aimed at tutorial and  functions could be used and tested. Of note, these are just small subsets of species and human dataset. We provided these ToyData so that the user can test the method.
 
 As an example you can re-calculate the Proteome CAIRs for the 16 mentioned organisms in table 1 of article. The required sample data files is in the ToyData folder. The program will count all the residues in ToyData FASTA files, group them by organism IDs and calculate CAIRs for each complete protome.
 
-However, if you plan to run the complete algorithm, you should download all the required files (~100GB for CAIR+ ~100MB for EMIP).
+Nevertheless, if you plan to run the complete algorithm, you should download all the required files (~100GB for CAIR + ~100MB for EMIP).
 
 ## Prerequisites
 
@@ -158,32 +157,32 @@ pip3 install requests biopython numpy pandas import_ipynb
 
 #### Windows
 
-1. Clone the repo
+1. Clone the repo:
 ```
 git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 ```
-2. Change running directory to the project environment
+2. Change running directory to the project environment:
 ```
 cd %HOMEDRIVE%%HOMEPATH%
 cd ShannoProt/ToyData/runCAIR
 ```
-3. Run the code file
+3. Run the code file:
 ```py
 python runCAIR.py
 or
 python3 runCAIR.py
 ```
 #### Linux
-1. Clone the repo
+1. Clone the repo:
 ```sh
 git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 ``` 
-2. Change running directory to the project environment
+2. Change running directory to the project environment:
 ```sh
 cd ~
 cd ShannoProt/ToyData/runCAIR
 ```
-3. Run the code file
+3. Run the code file:
 ```sh
 python runCAIR.py
 or
@@ -195,34 +194,34 @@ python3 runCAIR.py
 
 #### Windows
 
-1. Clone the repo
+1. Clone the repo:
 ```
 git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 ```
 
-2. Change running directory to the project environment
+2. Change running directory to the project environment:
 ```
 cd %HOMEDRIVE%%HOMEPATH%
 cd ShannoProt/ToyData/runEMIP
 ```
-3. Run the code file
+3. Run the code file:
 ```py
 python Human_disease_category_indicators.py
 or
 python3 Human_disease_category_indicators.py
 ```
 #### Linux
-1. Clone the repo
+1. Clone the repo:
 ```sh
 git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 ``` 
 
-2. Change running directory to the project environment
+2. Change running directory to the project environment:
 ```sh
 cd ~
 cd ShannoProt/ToyData/runEMIP
 ```
-3. Run the code file
+3. Run the code file:
 ```sh
 python Human_disease_category_indicators.py
 or
@@ -235,4 +234,4 @@ Not published yet
 
 License
 -------
-© Copyright 2020 Synaptic Proteolab. Licensed under the MIT License. See LICENSE file for more details.
+© Copyright 2020 Synaptic Proteolab. Licensed under the MIT License. See [LICENSE](https://github.com/synaptic-proteolab/CAIR_EMIP/tree/master/LICENSE) file for more details.
