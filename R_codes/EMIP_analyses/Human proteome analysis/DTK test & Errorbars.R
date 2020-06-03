@@ -1,4 +1,4 @@
-## 0. Loading packages ##
+## 0. Installing necessary packages ##
 #############################################################################################
 if(!require('data.table')){install.packages('data.table')}
 if(!require('ggpubr')){install.packages('ggpubr')}
