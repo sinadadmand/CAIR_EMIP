@@ -26,6 +26,8 @@ This Project involves the python and R implementation of the above entitled proj
 * [The EMIP algorithm](#EMIP-algorithm)  
 * [EMIP comparison analyses](#EMIP-comparison-analyses)  
 * [Usage](#Usage)  
+  * [Run from terminal](#run-from-terminal)  
+  * [Run from python](#run-from-python)  
 * [Toy data](#Toy-data)  
 
 
@@ -61,7 +63,7 @@ Estimation of mutual information for a protein (EMIP) is calculated using the fo
 
 ## EMIP comparison analyses
 xxxxxxxxxxxxx:  
-<img src="Figures/Figure3.jpg" height="500"> 
+<img src="Figures/Figure3.jpg" height="650"> 
 
 
 ## Usage
