@@ -71,18 +71,72 @@ xxxxxxxxxxxxx:
 
 # Usage
 
-## Install requirements
-```bash
+## Prerequisites
+
+All required packages to run the scripts can be installed from Terminal/CMD using:
+```sh
 pip3 install requests biopython numpy pandas import_ipynb
 ```
+## 1. CAIR Project
+### Input files>
+Required files to run runEMIP.py are available at:
 
-## Run from terminal
-CAIR_EMIP can be executed directly from terminal:
+* [uniprot_sprot.fasta](https://ftp.expasy.org/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz) 
 
+* [uniprot_trembl.fasta](https://ftp.expasy.org/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz) (For downloading this file, the FTP link is highly recommended due to its massive size of ~100GB)
 
-## Run from python
-Fire up your python shell or ipython notebook. 
+* [proteomes-redundant-no.tab](https://www.uniprot.org/proteomes/?query=redundant:no&format=tab&force=true&columns=id,name,organism-id,lineage&compress=yes)  
 
+  ###### *Downloaded files should be moved to the CAIR project directory
+
+#### Run from Terminal/CMD
+runCAIR can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#ToyData) section below except: 
+```
+cd ShannoProt/ToyData/runCAIR
+```
+which should be changed to:
+```
+cd ShannoProt/runCAIR
+```
+#### Run from python
+Fire up your ipython notebook.  
+Open "runCAIR.ipynb" and run all cells.
+
+### Final output files>
+* 1. [Complete proteome CAIRs.csv](https://github.com/synaptic-proteolab/CAIR_EMIP/blob/master/Supplementary_materials/CAIR_supplementary_files/Complete_proteome_CAIRs.csv)
+* 2. [All species residues.csv (*not uploaded due to its large size)]()
+* 3. [Entries sprot.csv (*not uploaded due to its large size)]()
+* 4. [Entries trembl (*not uploaded due to its large size)]()
+
+## 2. EMIP Project
+### Input files>
+Required files to run runEMIP.py are available at:
+
+* [UniProtNormalizedTabular-default.txt](www.pickle.gr/Data/2.5/PICKLE2_5_UniProtNormalizedTabular-default.zip)
+* [uniprot-proteome%3AUP000005640.tab](https://www.uniprot.org/uniprot/?query=proteome:UP000005640&format=tab&force=true&columns=id,reviewed,genes(PREFERRED),protein%20names,sequence,database(Orphanet),comment(INVOLVEMENT%20IN%20DISEASE),interactor&compress=yes)
+* [en_product9_prev.csv](http://www.orphadata.org/data/xml/en_product9_prev.xml) (***this file should be converted from .xml to .csv via excel***)
+* [main_HUMAN.csv](https://github.com/marcottelab/Gene-Ages/raw/master/Main/main_HUMAN.csv)  
+
+  ###### *Downloaded files should be moved to the EMIP project directory
+
+#### Run from Terminal/CMD
+runEMIP can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#ToyData) section below except: 
+```
+cd ShannoProt/ToyData/runEMIP
+```
+which should be changed to:
+```
+cd ShannoProt/runEMIP
+```
+#### Run from python
+Fire up your ipython notebook.  
+Open "Human_disease_category_indicators.ipynb" and run all cells.
+
+### Final output files>
+* 1. [w%entries(dropped)_w%diseases(expanded)_w%uniprot_w%orpha(processed).csv](https://github.com/synaptic-proteolab/CAIR_EMIP/blob/master/Supplementary_materials/EMIP_supplementary_files/w%entries(dropped)_w%diseases(expanded)_w%uniprot_w%orpha(processed).csv)
+* 2. [w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv](https://github.com/synaptic-proteolab/CAIR_EMIP/blob/master/Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv)
+* 3. [w%entries_w%diseases(expanded)_w%uniprot_w%orpha(unprocessed).csv](https://github.com/synaptic-proteolab/CAIR_EMIP/blob/master/Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases(expanded)_w%uniprot_w%orpha(unprocessed).xlsx)
+* 4. [w%entries_w%diseases_w%uniprot_wo%orpha.csv](https://github.com/synaptic-proteolab/CAIR_EMIP/blob/master/Supplementary_materials/EMIP_supplementary_files/w%entries_w%diseases_w%uniprot_wo%orpha.csv)
 
 # Toy data
 
@@ -92,13 +146,14 @@ As an example you can re-calculate the Proteome CAIRs for the 16 mentioned organ
 
 However, if you plan to run the complete algorithm, you should download all the required files (~100GB for CAIR+ ~100MB for EMIP).
 
-## 1. CAIR Project
-### Prerequisites
+## Prerequisites
 
-All required packages to run the scripts can be installed from terminal/CMD using:
+All required packages to run the following scripts can be installed from terminal/CMD using:
 ```sh
 pip3 install requests biopython numpy pandas import_ipynb
 ```
+
+## 1. CAIR Project
 
 ### Run from:
 
@@ -143,12 +198,6 @@ or
 python3 runCAIR.py
 ```
 ## 2. EMIP Project
-### Prerequisites
-
-All required packages to run the scripts can be installed from terminal/CMD using:
-```sh
-pip3 install requests numpy pandas import_ipynb
-```
 
 ### Run from:
 
@@ -158,7 +207,7 @@ pip3 install requests numpy pandas import_ipynb
 ```
 git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 ```
-2. reset the currnet directory to user directory
+2. reset the currnet directory to the user directory
 ```
 cd %HOMEDRIVE%%HOMEPATH%
 ```
@@ -178,7 +227,7 @@ python3 Human_disease_category_indicators.py
 git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 ``` 
 
-2. reset the currnet directory to user directory
+2. reset the currnet directory to the user directory
 ```sh
 cd ~
 ```
