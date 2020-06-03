@@ -5,6 +5,9 @@ if(!require('ggpubr')){install.packages('ggpubr')}
 if(!require('ggplot2')){install.packages('ggplot2')}
 if(!require('DTK')){install.packages('DTK')}
 if(!require('svglite')){install.packages('svglite')}
+
+## 0.1. Loading packages
+########################
 library(data.table)
 library(ggpubr)
 library(ggplot2)
@@ -14,8 +17,7 @@ library(svglite)
 ###########################
 ## 1. Preparing the data ##
 #############################################################################################
-directory <- getwd()
-df <- fread(paste(directory, 'Supplementary/runEMIP/w%entries_w%diseases(accumulated)_w%uniprot_w%orpha(processed).csv', sep = '/'),
+df <- fread("https://raw.githubusercontent.com/synaptic-proteolab/CAIR_EMIP/master/Supplementary_materials/EMIP_supplementary_files/w%25entries_w%25diseases(accumulated)_w%25uniprot_w%25orpha(processed).csv",
             select = c(1,2,5,6,7,8,10,11,12))
 colnames(df) <- c("stat", "ent", "len", "cair", "int", "mip", "occ", "dis", "age")
 df <- df[df$stat=='reviewed',]
@@ -346,10 +348,13 @@ overlay_fig <- ggarrange(l_mip, l_int, l_len, l_cair, labels = c("a", "b", "c", 
                          font.label = list(size = fsl, face = "bold", family = font_family),
                          ncol = 2, nrow = 2)
 
-svglite(file = "fig4_legend.svg", width = 7.08, height = 4)
+#############################
+## 5. Getting output files ##
+#############################################################################################
+svglite(file = "fig3_colored_ages.svg", width = 7.08, height = 4)
 fig
 dev.off()
 
-svglite(file = "fig4_ov.svg", width = 7.08, height = 4, bg = "transparent")
+svglite(file = "fig3_black_main.svg", width = 7.08, height = 4, bg = "transparent") # to be overlaid on "fig3_colored_ages.svg"
 overlay_fig
 dev.off()
