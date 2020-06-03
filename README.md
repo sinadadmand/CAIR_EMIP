@@ -55,8 +55,6 @@ CAIRs of each given protein is calculated using the following function of the sh
 <img src="img/CAIR_Eq.JPG" height="150"> 
 
 ## CAIR comparison analyses
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/blob/master/ShannoProt/runCAIR/runCAIR.ipynb)
-
 Violin plots of each evolutionary node and their corresponding mean comparison tests of the brunner-munzel:  
 <img src="Figures/Figure1.jpg" height="1400"> 
 
@@ -67,8 +65,6 @@ Estimation of mutual information for a protein (EMIP) is calculated using the fo
 <img src="img/EMIP_Eq.JPG" height="250"> 
 
 ## EMIP comparison analyses
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/blob/master/R_codes/)
-
 xxxxxxxxxxxxx:  
 <img src="Figures/Figure3.jpg" height="650"> 
 
@@ -77,91 +73,126 @@ xxxxxxxxxxxxx:
 
 ### Install requirements
 ```bash
-pip install requests numpy pandas biopython import_ipynb
+pip install requests biopython numpy pandas import_ipynb
 ```
 
 #### Run from terminal
-PyPuma can be run directly from the terminal with the following options:
-```
+CAIR_EMIP can be executed directly from terminal:
 
-```
-To run PyPuma on the included Toy example:
-```
-python run_puma.py -e ./ToyData/ToyExpressionData.txt -m ./ToyData/ToyMotifData.txt -p ./ToyData/ToyPPIData.txt -i ToyData/ToyMiRList.txt -o output_puma.txt
-```
-To run LIONESS on PUMA networks, use the flag -q (note that this can take a long time and use considerable computing resources):
-
-```python
-python run_puma.py -e ./ToyData/ToyExpressionData.txt -m ./ToyData/ToyMotifData.txt -p ./ToyData/ToyPPIData.txt -i ToyData/ToyMiRList.txt -o output_puma.txt -q output_lioness.txt
-```
-Finally, note that running PUMA without importing motif and expression data will estimate a co-expression network using Pearson correlation.
 
 #### Run from python
 Fire up your python shell or ipython notebook. 
-Import the classes in the PyPuma library:
-```python
-from pypuma.puma import Puma
-from pypuma.lioness import Lioness
-```
-Then run PUMA:
-```python
-puma_obj = Puma('ToyData/ToyExpressionData.txt', 'ToyData/ToyMotifData.txt', 'ToyData/ToyPPIData.txt','ToyData/ToyMiRList.txt')
-```
-Save the results:
-```python
-puma_obj.save_puma_results('Toy_Puma.pairs.txt')
-```
-Example of returning a network visualization of the top edges:
-
-```python
-puma_obj.top_network_plot(top=70, file='top_genes.png')
-```
-<!--
-or
-```python
-from PyPuma.analyze_puma import AnalyzePuma
-plot = AnalyzePuma(puma_obj)
-plot.top_network_plot(top=100, file='top_100_genes.png')
-```-->
-Calculate indegrees for further analysis:
-```python
-indegree = puma_obj.return_puma_indegree()
-```
 
 
 ## Toy data
-xxxxxxxxxxxxxxxx.
 
+The example data files to run all the functions are available here. Of note, these are just small subsets of species and human dataset. We provided these ToyData so that the user can test the method.
 
+As an example you can re-calculate the Proteome CAIRs for the 16 mentioned organisms in table 1 of article. The required sample data files is in the ToyData folder. The program will count all the residues in ToyData FASTA files, group them by organism IDs and calculate CAIRs for each complete protome.
 
-The easiest way to run CAIR-EMIP Python codes is by typing these lines in cmd/terminal:
+However, if you plan to run the complete algorithm, you should download all the required files (~100GB for CAIR+ ~100MB for EMIP).
 
-for windows:
-for linux:
-.  
-.  
-.  
+1. CAIR Project
+### Prerequisites
 
+All required packages to run the scripts can be installed from terminal/CMD using:
+```sh
+pip3 install requests biopython numpy pandas import_ipynb
 ```
 
+### Run from:
+
+#### Windows
+
+1. Clone the repo
+```
 git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
+```
+2. reset the currnet directory to user directory
+```
+cd %HOMEDRIVE%%HOMEPATH%
+```
+3. Change running directory to the project environment
+```
 cd ShannoProt/ToyData/runCAIR
-python runCAIR.py
-python 3 runCAIR.py
 ```
+4. Run the code file
+```py
+python runCAIR.py
+or
+python3 runCAIR.py
+```
+#### Linux
+1. Clone the repo
+```sh
+git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
+``` 
+
+2. reset the currnet directory to user directory
+```sh
+cd ~
+```
+3. Change running directory to the project environment
+```sh
+cd ShannoProt/ToyData/runCAIR
+```
+4. Run the code file
+```sh
+python runCAIR.py
+or
+python3 runCAIR.py
+```
+2. EMIP Project
+### Prerequisites
+
+All required packages to run the scripts can be installed from terminal/CMD using:
+```sh
+pip3 install requests numpy pandas import_ipynb
+```
+
+### Run from:
+
+#### Windows
+
+1. Clone the repo
 ```
 git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
+```
+2. reset the currnet directory to user directory
+```
+cd %HOMEDRIVE%%HOMEPATH%
+```
+3. Change running directory to the project environment
+```
 cd ShannoProt/ToyData/runEMIP
+```
+4. Run the code file
+```py
 python Human_disease_category_indicators.py
-python 3 Human_disease_category_indicators.py
+or
+python3 Human_disease_category_indicators.py
+```
+#### Linux
+1. Clone the repo
+```sh
+git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
+``` 
+
+2. reset the currnet directory to user directory
+```sh
+cd ~
+```
+3. Change running directory to the project environment
+```sh
+cd ShannoProt/ToyData/runEMIP
+```
+4. Run the code file
+```sh
+python Human_disease_category_indicators.py
+or
+python3 Human_disease_category_indicators.py
 ```
 
-.
-.
-.
-
-.
-```
 Reference Paper
 -------
 Not published yet
