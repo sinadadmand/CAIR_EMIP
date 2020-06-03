@@ -26,6 +26,7 @@ This Project involves the python and R implementation of the above entitled proj
 * [The EMIP algorithm](#EMIP-algorithm)  
 * [EMIP comparison analyses](#EMIP-comparison-analyses)  
 * [Usage](#Usage)  
+  * [Install requirements](#Install-requirements)  
   * [Run from terminal](#run-from-terminal)  
   * [Run from python](#run-from-python)  
 * [Toy data](#Toy-data)  
@@ -67,17 +68,16 @@ xxxxxxxxxxxxx:
 
 
 ## Usage
+
+### Install requirements
+```bash
+pip install requests numpy pandas biopython import_ipynb
+```
+
 #### Run from terminal
 PyPuma can be run directly from the terminal with the following options:
 ```
--h help
--e, --expression: expression values
--m, --motif: pair file of motif edges, or Pearson correlation matrix when not provided 
--p, --ppi: pair file of PPI edges
--o, --output: output file
--i, --mir: mir data miR file
--r, --rm_missing
--q, --lioness: output for Lioness single sample networks 
+
 ```
 To run PyPuma on the included Toy example:
 ```
