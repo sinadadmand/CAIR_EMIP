@@ -101,11 +101,11 @@ Required files to run `runCAIR.py` are available at:
 #### Run from Terminal/CMD
 `runCAIR` can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#toy-data) section, except for the line: 
 ```sh
-cd ShannoProt/ToyData/runCAIR
+cd CAIR_EMIP/ShannoProt/ToyData/runCAIR
 ```
 which should be changed to (~~/ToyData~~):
 ```sh
-cd ShannoProt/runCAIR
+cd CAIR_EMIP/ShannoProt/runCAIR
 ```
 #### Run from Python
 Fire up your IPython notebook.  
@@ -131,11 +131,11 @@ Required files to run `runEMIP.py` are available at:
 #### Run from Terminal/CMD
 `runEMIP` can be executed directly from the Terminal/CMD by following all the instructions explained in the [ToyData](#toy-data) section, except for the line: 
 ```sh
-cd ShannoProt/ToyData/runEMIP
+cd CAIR_EMIP/ShannoProt/ToyData/runEMIP
 ```
 which should be changed to (~~/ToyData~~):
 ```sh
-cd ShannoProt/runEMIP
+cd CAIR_EMIP/ShannoProt/runEMIP
 ```
 #### Run from Python
 Fire up your IPython notebook.  
@@ -175,7 +175,7 @@ git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 2. Change running directory to the project environment:
 ```sh
 cd %HOMEDRIVE%%HOMEPATH%
-cd ShannoProt/ToyData/runCAIR
+cd CAIR_EMIP/ShannoProt/ToyData/runCAIR
 ```
 3. Run the code file:
 ```sh
@@ -193,7 +193,7 @@ git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 2. Change running directory to the project environment:
 ```sh
 cd ~
-cd ShannoProt/ToyData/runCAIR
+cd CAIR_EMIP/ShannoProt/ToyData/runCAIR
 ```
 3. Run the code file:
 ```sh
@@ -216,7 +216,7 @@ git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 2. Change running directory to the project environment:
 ```sh
 cd %HOMEDRIVE%%HOMEPATH%
-cd ShannoProt/ToyData/runEMIP
+cd CAIR_EMIP/ShannoProt/ToyData/runEMIP
 ```
 3. Run the code file:
 ```sh
@@ -234,7 +234,7 @@ git clone https://github.com/synaptic-proteolab/CAIR_EMIP.git
 2. Change running directory to the project environment:
 ```sh
 cd ~
-cd ShannoProt/ToyData/runEMIP
+cd CAIR_EMIP/ShannoProt/ToyData/runEMIP
 ```
 3. Run the code file:
 ```sh
