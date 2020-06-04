@@ -47,7 +47,7 @@ _Prepared manuscript_
 R codes: [DiseaseAnals](R_codes/EMIP_analyses).
 
 # The Calculated Average Information per Residue
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/tree/master/ShannoProt/runCAIR/runCAIR.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/blob/master/ShannoProt/runCAIR/runCAIR.ipynb)
 
 <p align="justify">In the context of proteomics, the CAIR is proposed as the 22-ary of <a href="https://en.wikipedia.org/wiki/Entropy_(information_theory)">Shannon’s entropy</a>. For each given protein, CAIR is formulized as:</p>  
 
@@ -63,7 +63,7 @@ R codes: [DiseaseAnals](R_codes/EMIP_analyses).
 </p>
 
 # The Mutual Information of Proteins
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/tree/master/ShannoProt/runEMIP/Human_disease_category_indicators.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/synaptic-proteolab/CAIR_EMIP/blob/master/ShannoProt/runEMIP/Human_disease_category_indicators.ipynb)
 
 As proposed by the mathematical theorem, the estimation of mutual information is formulized as:  
 
