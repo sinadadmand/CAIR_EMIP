@@ -1,4 +1,4 @@
-An extension of Shannon’s entropy agrees with the tree of life and justifies human disease occurrences
+A mathematical theory to explain taxa diversity and human diseases
 =====================================
 
 <p align="center">
