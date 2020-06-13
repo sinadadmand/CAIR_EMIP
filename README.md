@@ -1,6 +1,9 @@
 An extension of Shannon’s entropy agrees with the tree of life and justifies human disease occurrences
 =====================================
 
+[![HitCount](http://hits.dwyl.com/synaptic-proteolab/CAIR_EMIP.svg)](http://hits.dwyl.com/synaptic-proteolab/CAIR_EMIP)
+[![DOI](https://zenodo.org/badge/268862760.svg)](https://zenodo.org/badge/latestdoi/268862760)
+
 <p align="center">
   <img src="Logo/Proteolab logo.jpg" width=650>
 </p>
@@ -11,11 +14,11 @@ An extension of Shannon’s entropy agrees with the tree of life and justifies h
 [Reference article](#reference-article) |
 [Supplementary materials](Supplementary_materials)
 
-[![HitCount](http://hits.dwyl.com/synaptic-proteolab/CAIR_EMIP.svg)](http://hits.dwyl.com/synaptic-proteolab/CAIR_EMIP)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-blueviolet.svg?style=plastic&logo=python&logoColor=f5f5f5)](https://github.com/synaptic-proteolab/CAIR_EMIP/pulls)
 [![GitHub issues](https://img.shields.io/github/issues/synaptic-proteolab/CAIR_EMIP.svg?style=plastic&logo=github)](https://github.com/synaptic-proteolab/CAIR_EMIP/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-important.svg?style=plastic&logo=open-source-initiative&logoColor=f5f5f5)](LICENSE)
 <img src="https://img.shields.io/badge/Study%20Status-Results%20Available-informational.svg?style=plastic&logo=github-actions&logoColor=f5f5f5" alt="Study Status: Results Available"> 
+
 
 # Description
 <p align="justify">In this study, with the use of the information theory, we have proposed and proved a mathematical theorem by which we argue the reason for the existence of human diseases. To introduce our theoretical frame of reference, first, we present Shannon’s entropy for proteomes as a tool to compare systems complexity and distinguish between the several levels of biological organizations. Nearly 180 million proteins with more than 61 billion amino acids are analyzed to classify ~29 thousand organisms in 92 phyla. We further establish a new approach, namely the wave of life, to differentiate several taxa and corroborate our findings through the latest tree of life. Foremost, Homo sapiens data from UniProt, PICKLE, and Orphanet databases are gathered and analyzed according to our new theorem to show that disease occurrences follow our predictions. Furthermore, we discuss the dynamics of protein network stability and the different possible scenarios for the existence of human diseases. We also account for the reasoning behind our mathematical theorem and its biological inferences. This GitHub repository involves the Python and R implementation of the investigation. </p>
