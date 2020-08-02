@@ -54,7 +54,8 @@ ball_size <- 0.1
 fs <- 6
 fsl <- 6
 font_family <- "sans"
-color_palette <- "npg"
+color_palette <- c("#eaa899", "#b99c74", "#a19997", "#52c0a3",
+                   "#0b7791", "#6c5877", "#9b4822", "#cf202d")
 mip <- ggerrorplot(data = df, x = 'occ', y = 'mip', desc_stat = 'mean_ci',color = "age",
                    error.plot = "errorbar", xlab = "Occurence category", size =  err_size,
                    ylab = "EMIP", palette = color_palette, add = "mean",
@@ -351,10 +352,10 @@ overlay_fig <- ggarrange(l_mip, l_int, l_len, l_cair, labels = c("a", "b", "c", 
 #############################
 ## 5. Getting output files ##
 #############################################################################################
-svglite(file = "fig3_colored_ages.svg", width = 7.08, height = 4)
+svglite(file = "Fig3_ColouredAges.svg", width = 7.08, height = 4)
 fig
 dev.off()
 
-svglite(file = "fig3_black_main.svg", width = 7.08, height = 4, bg = "transparent") # to be overlaid on "fig3_colored_ages.svg"
+svglite(file = "Fig3_BlackMain.svg", width = 7.08, height = 4, bg = "transparent") # to be overlaid on "Fig3_ColouredAges.svg"
 overlay_fig
 dev.off()
