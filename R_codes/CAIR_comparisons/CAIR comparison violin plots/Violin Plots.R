@@ -54,11 +54,11 @@ violinplot <- function(test_num, grp1, grp2){
                 opacity = 0.85,
                 pointpos = -0.4,
                 points = 'suspectedoutliers',
-                fillcolor = "#01758f",
+                fillcolor = "#1587a0",
                 box = list(visible = T, width = 0.2),
                 meanline = list(visible = T, color="#f0f4fa"),
-                line = list (width = 0.3, color = "#0f4d82"),
-                marker = list (size = 1.5, color="#0f4d82",
+                line = list (width = 0.3, color = "#0b7791"),
+                marker = list (size = 1.5, color="#0b7791",
                                line = list (outlierwidth = 0.15),
                                symbol="diamond")) %>% 
       
@@ -69,11 +69,11 @@ violinplot <- function(test_num, grp1, grp2){
                 opacity = 0.85,
                 pointpos = 0.4,
                 points = 'suspectedoutliers',
-                fillcolor = "#55c0a3",
+                fillcolor = "#52c0a3",
                 box = list(visible = T, width = 0.2),
                 meanline = list(visible = T, color="#f0f4fa"),
-                line = list (width = 0.3, color = "#397f6a"),
-                marker = list (size = 1.5, color="#397f6a",
+                line = list (width = 0.3, color = "#36806a"),
+                marker = list (size = 1.5, color="#36806a",
                                line = list (outlierwidth = 0.15),
                                symbol="diamond")) %>% 
       
@@ -192,6 +192,6 @@ fig <- subplot(
 ## 4. Displaying output ##
 #############################################################################################
 # for more information on orca see: https://github.com/plotly/orca#Installation
-orca(p = fig, file = "Fig1_Violinplots.svg", format = 'svg',
+orca(p = fig, file = "Fig1B.svg", format = 'svg',
      width = round(num_of_plots/fig_rows, 0)*each_plot_width,
      height = fig_rows*each_plot_width)
