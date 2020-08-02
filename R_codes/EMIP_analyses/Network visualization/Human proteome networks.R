@@ -103,8 +103,8 @@ plot(x = net,
      vertex.frame.width=0.25,
      vertex.label=NA,
      edge.curved=0,
-     vertex.color=c("#00A087"),
-     edge.color="#464646",
+     vertex.color=c("#1587a0"),
+     edge.color="#262d3b",
      edge.width=0.12)
 title(Protein_name, line = -(7+Title_pos/5), font.main = 1, family="sans", cex.main=0.5)
 title(Label, adj=0, line = -0.36, font.main = 2, family="sans", cex.main=0.5)
@@ -114,19 +114,19 @@ dev.off()
 #############################
 ## 4. Getting output files ##
 #############################################################################################
-protnet('a)', 'Q8WZ42', 'Connectin', 'Supp_Fig2_a.svg', 1)
-protnet('b)', 'P05067', 'Amyloid-beta\nprecursor protein', 'Supp_Fig2_b.svg', 2)
-protnet('c)', 'P0CG48', 'Polyubiquitin-C', 'Supp_Fig2_c.svg', 1)
-protnet('d)', 'Q8WXI7', 'Ovarian carcinoma\nantigen CA125', 'Supp_Fig2_d.svg', 2) # the drawn network is from the PICKLE database
-protnet('e)', 'Q9NRI5', 'Disrupted in schizo-\nphrenia 1 protein', 'Supp_Fig2_e.svg', 2)
-protnet('f)', 'P04637', 'Cellular tumor\nantigen p53', 'Supp_Fig2_f.svg', 2)
-protnet('g)', 'Q09472', 'Histone acetyl-\ntransferase p300', 'Supp_Fig2_g.svg', 2)
-protnet('h)', 'P00533', 'Epidermal growth\nfactor receptor', 'Supp_Fig2_h.svg', 2)
-protnet('i)', 'P62993', 'Growth factor receptor-\nbound protein 2', 'Supp_Fig2_i.svg', 2)
-protnet('j)', 'Q8NF91', 'Nesprin-1', 'Supp_Fig2_j.svg', 1)
-protnet('k)', 'P63104', 'Protein kinase C\ninhibitor protein 1', 'Supp_Fig2_k.svg', 2)
-protnet('l)', 'P78362', 'SRSF protein kinase 2', 'Supp_Fig2_l.svg', 2)
-protnet('m)', 'Q03001', 'Dystonin', 'Supp_Fig2_m.svg', 1)
-protnet('n)', 'Q5VST9', 'Obscurin', 'Supp_Fig2_n.svg', 1)
-protnet('o)', 'P38398', 'Breast cancer type 1\nsusceptibility protein', 'Supp_Fig2_o.svg', 2)
-protnet('p)', 'Q15149', 'Plectin', 'Supp_Fig2_p.svg', 1)
+protnet('A', 'Q8WZ42', 'Connectin', 'FigEV2A.svg', 1)
+protnet('B', 'P05067', 'Amyloid-beta\nprecursor protein', 'FigEV2B.svg', 2)
+protnet('C', 'P0CG48', 'Polyubiquitin-C', 'FigEV2C.svg', 1)
+protnet('D', 'Q8WXI7', 'Ovarian carcinoma\nantigen CA125', 'FigEV2D.svg', 2) # the drawn network is from the PICKLE database
+protnet('E', 'Q9NRI5', 'Disrupted in schizo-\nphrenia 1 protein', 'FigEV2E.svg', 2)
+protnet('F', 'P04637', 'Cellular tumor\nantigen p53', 'FigEV2F.svg', 2)
+protnet('G', 'Q09472', 'Histone acetyl-\ntransferase p300', 'FigEV2G.svg', 2)
+protnet('H', 'P00533', 'Epidermal growth\nfactor receptor', 'FigEV2H.svg', 2)
+protnet('I', 'P62993', 'Growth factor receptor-\nbound protein 2', 'FigEV2I.svg', 2)
+protnet('J', 'Q8NF91', 'Nesprin-1', 'FigEV2J.svg', 1)
+protnet('K', 'P63104', 'Protein kinase C\ninhibitor protein 1', 'FigEV2K.svg', 2)
+protnet('L', 'P78362', 'SRSF protein kinase 2', 'FigEV2L.svg', 2)
+protnet('M', 'Q03001', 'Dystonin', 'FigEV2M.svg', 1)
+protnet('N', 'Q5VST9', 'Obscurin', 'FigEV2N.svg', 1)
+protnet('O', 'P38398', 'Breast cancer type 1\nsusceptibility protein', 'FigEV2O.svg', 2)
+protnet('P', 'Q15149', 'Plectin', 'FigEV2P.svg', 1)
