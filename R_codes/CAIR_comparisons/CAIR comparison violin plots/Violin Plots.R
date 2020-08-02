@@ -54,11 +54,11 @@ violinplot <- function(test_num, grp1, grp2){
                 opacity = 0.85,
                 pointpos = -0.4,
                 points = 'suspectedoutliers',
-                fillcolor = "#4DBBD5",
+                fillcolor = "#01758f",
                 box = list(visible = T, width = 0.2),
-                meanline = list(visible = T, color="#91D1C2"),
-                line = list (width = 0.3, color = "#29636D"),
-                marker = list (size = 1.5, color="#29636D",
+                meanline = list(visible = T, color="#f0f4fa"),
+                line = list (width = 0.3, color = "#0f4d82"),
+                marker = list (size = 1.5, color="#0f4d82",
                                line = list (outlierwidth = 0.15),
                                symbol="diamond")) %>% 
       
@@ -69,11 +69,11 @@ violinplot <- function(test_num, grp1, grp2){
                 opacity = 0.85,
                 pointpos = 0.4,
                 points = 'suspectedoutliers',
-                fillcolor = "#00A087",
+                fillcolor = "#55c0a3",
                 box = list(visible = T, width = 0.2),
-                meanline = list(visible = T, color="#91D1C2"),
-                line = list (width = 0.3, color = "#005141"),
-                marker = list (size = 1.5, color="#005141",
+                meanline = list(visible = T, color="#f0f4fa"),
+                line = list (width = 0.3, color = "#397f6a"),
+                marker = list (size = 1.5, color="#397f6a",
                                line = list (outlierwidth = 0.15),
                                symbol="diamond")) %>% 
       
