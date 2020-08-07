@@ -209,7 +209,7 @@ parset <- list(
   sub.text = fonttext,
   add.text = fonttext)
 
-svglite(file = 'Fig4A.svg', width = 3.4, height = 2.5)
+svglite(file = 'Fig5A.svg', width = 3.4, height = 2.5)
 xt <- t(as.data.frame.array(xtabs(~ occ + mip, data = df)))
 plot.likert(x = xt, ylab = 'LEMIP', xlab = "Percents", as.percent = T,
             ReferenceZero = 2.5, scales=list(x=list(at=seq(-100,100,10))),
@@ -217,7 +217,7 @@ plot.likert(x = xt, ylab = 'LEMIP', xlab = "Percents", as.percent = T,
             main = F, rightAxis = F, col = col, par.settings = parset)
 dev.off()
 
-svglite(file = 'Fig4B.svg', width = 3.4, height = 2.5)
+svglite(file = 'Fig5B.svg', width = 3.4, height = 2.5)
 xt <- t(as.data.frame.array(xtabs(~ occ + int, data = df)))
 plot.likert(x = xt, ylab = 'Number of interactions', xlab = "Percents", as.percent = T,
             ReferenceZero = 2.5, scales=list(x=list(at=seq(-100,100,10))),
@@ -225,7 +225,7 @@ plot.likert(x = xt, ylab = 'Number of interactions', xlab = "Percents", as.perce
             main = F, rightAxis = F, col = col, par.settings = parset)
 dev.off()
 
-svglite(file = 'Fig4D.svg', width = 3.4, height = 2.5)
+svglite(file = 'Fig5D.svg', width = 3.4, height = 2.5)
 xt <- t(as.data.frame.array(xtabs(~ occ + cair, data = df)))
 plot.likert(x = xt, ylab = 'CAIR', xlab = "Percents", as.percent = T,
             ReferenceZero = 2.5, scales=list(x=list(at=seq(-100,100,10))),
@@ -233,7 +233,7 @@ plot.likert(x = xt, ylab = 'CAIR', xlab = "Percents", as.percent = T,
             main = F, rightAxis = F, col = col, par.settings = parset)
 dev.off()
 
-svglite(file = 'Fig4E.svg', width = 3.4, height = 2.5)
+svglite(file = 'Fig5E.svg', width = 3.4, height = 2.5)
 xt <- t(as.data.frame.array(xtabs(~ occ + len, data = df)))
 plot.likert(x = xt, ylab = 'Protein length', xlab = "Percents", as.percent = T,
             ReferenceZero = 2.5, scales=list(x=list(at=seq(-100,100,10))),
@@ -241,7 +241,7 @@ plot.likert(x = xt, ylab = 'Protein length', xlab = "Percents", as.percent = T,
             main = F, rightAxis = F, col = col, par.settings = parset)
 dev.off()
 
-svglite(file = 'Fig4C.svg', width = 3.4, height = 2.5)
+svglite(file = 'Fig5C.svg', width = 3.4, height = 2.5)
 df <- df[!is.na(df$age),]
 xt <- t(as.data.frame.array(xtabs(~ occ + age, data = df)))
 plot.likert(x = xt, ylab = 'Gene age', xlab = "Percents", as.percent = T,
