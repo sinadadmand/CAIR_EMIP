@@ -352,10 +352,10 @@ overlay_fig <- ggarrange(l_mip, l_int, l_len, l_cair, labels = c("a", "b", "c", 
 #############################
 ## 5. Getting output files ##
 #############################################################################################
-svglite(file = "Fig3_ColouredAges.svg", width = 7.08, height = 4)
+svglite(file = "Fig4_ColouredAges.svg", width = 7.08, height = 4)
 fig
 dev.off()
 
-svglite(file = "Fig3_BlackMain.svg", width = 7.08, height = 4, bg = "transparent") # to be overlaid on "Fig3_ColouredAges.svg"
+svglite(file = "Fig4_BlackMain.svg", width = 7.08, height = 4, bg = "transparent") # to be overlaid on "Fig4_ColouredAges.svg"
 overlay_fig
 dev.off()
