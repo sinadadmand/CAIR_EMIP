@@ -111,18 +111,18 @@ bw <- 0.0005
 from <- 0.88
 to <- 0.94
 wol_real <- density(as.matrix(rand_samp), from=from, to=to, bw=bw)
-svglite(file = 'FigEV1A.svg', pointsize = 6, width = 3.46, height = 1.73)
+svglite(file = 'Fig2A.svg', pointsize = 6, width = 3.46, height = 1.73)
 plot(wol_real, main = "", col="#cf202d", xlab='', ylab='', yaxt ='n', family="sans")
 title(ylab="CAIR Density", line=0.5, cex.lab=1, family="sans") + rug (num_org$median)
 dev.off()
 
 wol_simul <- density(simulation, from=from, to=to, bw=bw)
-svglite(file = 'FigEV1B.svg', pointsize = 6, width = 3.46, height = 1.73)
+svglite(file = 'Fig2B.svg', pointsize = 6, width = 3.46, height = 1.73)
 plot(wol_simul, main = "", col="#0b7791", xlab='', ylab='', yaxt ='n', family="sans")
 title(ylab="CAIR Density", line=0.5, cex.lab=1, family="sans") + rug (num_org$median)
 dev.off()
 
-svglite(file = 'FigEV1C.svg', pointsize = 6, width = 3.46, height = 1.73)
+svglite(file = 'Fig2C.svg', pointsize = 6, width = 3.46, height = 1.73)
 bw <- 0.0001
 wol_real <- density(as.matrix(rand_samp), from=from, to=to, bw=bw)
 wol_simul <- density(simulation, from=from, to=to, bw=bw)
